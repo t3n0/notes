@@ -11,12 +11,12 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
 # Contents
 
  1. Useful [routines](https://github.com/t3n0/notebooks/tree/main/routines):
-  - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
-  - pollo
-  - pippo
+   - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
+   - pollo
+   - pippo
  2. Physics lectures:
-  - Maxwell equations
-  - cicciopasticcio
+   - Maxwell equations
+   - cicciopasticcio
 
 # Support
 
