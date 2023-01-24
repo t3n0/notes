@@ -17,6 +17,10 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
 2. [Lectures and excercises](https://github.com/t3n0/notebooks/tree/main/lectures):
     - [1D Maxwell equations](https://github.com/t3n0/notebooks/tree/main/lectures/maxwell1D) at planar interface and normal incidence
     - [Ising model](https://github.com/t3n0/notebooks/tree/main/lectures/ising%20model)
+    - [finite quantum square well](https://github.com/t3n0/notebooks/tree/main/lectures/finite%20square%20well%201D) in 1D
+    - [timing and profiling python](https://github.com/t3n0/notebooks/tree/main/lectures/profiling%20python)
+
+More contents to come, as long as I keep giving lectures.
 
 # Support
 
