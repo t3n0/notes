@@ -18,6 +18,12 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
    - Maxwell equations
    - cicciopasticcio
 
+1. Item 1
+2. Item 2
+    * Item 2a
+    * Item 2b
+
+
 # Support
 
 For any problems, questions or suggestions, please contact me at tenobaldi@gmail.com.
