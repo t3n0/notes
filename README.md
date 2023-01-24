@@ -8,4 +8,4 @@ The following notebooks are [binderized](https://mybinder.org/):
 - pollo
 
 
-[binderized](https://mybinder.org/v2/gh/t3n0/notebooks/tree/main/HEAD)
+[binderized](https://mybinder.org/v2/gh/t3n0/notebooks/HEAD)
