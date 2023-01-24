@@ -13,6 +13,7 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
 1. [Routines](https://github.com/t3n0/notebooks/tree/main/routines):
     - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
     - [2D line approximated by pixels](https://github.com/t3n0/notebooks/blob/main/routines/pixel%20line%20in%202D.ipynb)
+    - [winding number of a polygon](https://github.com/t3n0/notebooks/blob/main/routines/winding%20number%20of%20a%20polygon.ipynb), checks wheter a point is contained into a given polygon
 2. Physics lectures:
     - Maxwell equations
     - cicciopasticcio
