@@ -14,9 +14,9 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
     - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
     - [2D line approximated by pixels](https://github.com/t3n0/notebooks/blob/main/routines/pixel%20line%20in%202D.ipynb)
     - [winding number of a polygon](https://github.com/t3n0/notebooks/blob/main/routines/winding%20number%20of%20a%20polygon.ipynb), checks wheter a point is contained into a given polygon
-2. Physics lectures:
-    - Maxwell equations
-    - cicciopasticcio
+2. [Lectures and excercises](https://github.com/t3n0/notebooks/tree/main/lectures):
+    - [1D Maxwell equations](https://github.com/t3n0/notebooks/tree/main/lectures/maxwell1D) at planar interface and normal incidence
+    - [Ising model](https://github.com/t3n0/notebooks/tree/main/lectures/ising%20model)
 
 # Support
 
