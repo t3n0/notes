@@ -10,8 +10,8 @@ Others probabily lack of the necessary dependencies/widgets to properly been ren
 
 # Contents
 
-1. [routines](https://github.com/t3n0/notebooks/tree/main/routines):
-  - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
+1. Useful [routines](https://github.com/t3n0/notebooks/tree/main/routines):
+        - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
 
 
 # Support
