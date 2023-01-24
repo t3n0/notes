@@ -10,10 +10,9 @@ Others probabily lack of the necessary dependencies/widgets to properly be rende
 
 # Contents
 
-1. Useful [routines](https://github.com/t3n0/notebooks/tree/main/routines):
+1. [Routines](https://github.com/t3n0/notebooks/tree/main/routines):
     - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
-    - pollo
-    - pippo
+    - [2D line approximated by pixels](https://github.com/t3n0/notebooks/blob/main/routines/pixel%20line%20in%202D.ipynb)
 2. Physics lectures:
     - Maxwell equations
     - cicciopasticcio
