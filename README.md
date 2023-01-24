@@ -6,15 +6,15 @@
 This a collection of jupyter notebooks made by [me](https://github.com/t3n0). It includes little projects, routines and physics lectures and excercises.
 
 Most notebooks can be [binderized](https://mybinder.org/v2/gh/t3n0/notebooks/HEAD) and are ready to be used (loading binder takes a little time, don't despare).
-Others probabily lack of the necessary dependencies/widgets to properly been rendered on binder. Just download and try to run them locally.
+Others probabily lack of the necessary dependencies/widgets to properly be rendered on binder. Just download whatever you need and try to run it locally.
 
 # Contents
 
-1. Useful [routines](https://github.com/t3n0/notebooks/tree/main/routines):
+ 1. Useful [routines](https://github.com/t3n0/notebooks/tree/main/routines):
   - [Fourier interpolation](https://github.com/t3n0/notebooks/blob/main/routines/Fourier%20Interpolation.ipynb)
   - pollo
   - pippo
-2. Physics lectures:
+ 2. Physics lectures:
   - Maxwell equations
   - cicciopasticcio
 
