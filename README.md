@@ -5,7 +5,7 @@
 
 This a collection of jupyter notebooks made by [me](https://github.com/t3n0). It includes little projects, routines and physics lectures and excercises.
 
-Most notebooks can be [binderized](https://mybinder.org/v2/gh/t3n0/notebooks/HEAD) and are ready to be used (loading binder takes a little time, don't despare).
+Most notebooks can be [binderized](https://mybinder.org/v2/gh/t3n0/notebooks/HEAD) and are ready to be used (loading binder takes a little time, don't despair).
 Others probabily lack of the necessary dependencies/widgets to properly be rendered on binder. Just download whatever you need and try to run it locally.
 
 # Contents
