@@ -1,12 +1,12 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/)
 
-# Notebooks
+[me]: https://github.com/t3n0
 
-This a collection of jupyter notebooks made by [me](https://github.com/t3n0). It includes little projects, routines and physics lectures and excercises.
+# Tentacolo: my notes, scripts and memos
 
-Most notebooks can be [binderized](https://mybinder.org/v2/gh/t3n0/notebooks/HEAD) and are ready to be used (loading binder takes a little time, don't despair).
-Others probabily lack of the necessary dependencies/widgets to properly be rendered on binder. Just download whatever you need and try to run it locally.
+This repo is a collection of notes, links, scripts, lectures and ideas spanning a number of different topics.\
+The purpose is to collect in a single place all these useful information without googling them from scratch.\
+All the contents are proudly made by [me][me]. 
 
 # Contents
 
