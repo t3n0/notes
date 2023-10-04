@@ -1,6 +1,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 [me]: https://github.com/t3n0
+[maxwell1D]: https://github.com/t3n0/notes/tree/main/lectures/maxwell1D
+[ising]: https://github.com/t3n0/notes/tree/main/lectures/ising%20model
+[qw1D]: https://github.com/t3n0/notes/tree/main/lectures/finite%20square%20well%201D
+[pyprofile]: https://github.com/t3n0/notes/tree/main/lectures/profiling%20python
 
 # My notes, scripts and memos
 
@@ -17,7 +21,7 @@ All the contents are proudly made by [me][me].
 2. [Lectures and excercises](lectures):
     - [1D Maxwell equations][maxwell1D] at planar interface and normal incidence
     - [Ising model][ising]
-    - [finite quantum square well][qw1d] in 1D
+    - [finite quantum square well][qw1D] in 1D
     - [timing and profiling python][pyprofile]
 3. [Python common practise][python]:
    - [build, distribute and install](python/python-packaging.md)
