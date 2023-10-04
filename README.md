@@ -25,10 +25,13 @@ All the contents are proudly made by [me][me].
     - [timing and profiling python][pyprofile]
 3. [Python common practise](python):
    - [build, distribute and install](python/python-packaging.md)
+   - [system-wide scripts](python/python-scripts.md)
 4. [Ubuntu install and useful utilities](ubuntu):
-   - pollo
+   - [ubuntu clean install](ubuntu/clean-install.md)
+   - [create a descktop launcher for an app](ubuntu/desktop-app-launcher.md)
 5. [Git](git):
-   - pollo
+   - [git notes](git/git-notes.md)
+   - [cloning a repo](git/git-cloning.md)
 6. [Other](other):
    - pollo
 
