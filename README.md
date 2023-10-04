@@ -33,7 +33,9 @@ All the contents are proudly made by [me][me].
    - [git notes](git/git-notes.md)
    - [cloning a repo](git/git-cloning.md)
 6. [Other](other):
-   - pollo
+   - [markdown notes](other/markdown.md)
+   - How to set up [shields and bagdes](https://shields.io/)
+   - Naming conventions for coding: [semver](https://semver.org/)
 
 More contents to come, as long as I keep giving lectures.
 
