@@ -32,8 +32,8 @@ All the contents are proudly made by [me][me].
     - [Ising model][ising]
     - [finite quantum square well][qw1d] in 1D
     - [timing and profiling python][pyprofile]
-3. [Python common practise, syntax and useful templates][python]:
-   - pollo
+3. [Python common practise][python]:
+   - [build, distribute and install](python/python-packaging.md)
 4. [Ubuntu install and useful utilities][ubuntu]:
    - pollo
 5. [Git][git]:
