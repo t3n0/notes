@@ -14,7 +14,7 @@ All the contents are proudly made by [me][me].
     - [Fourier interpolation](routines/fourier.ipynb)
     - [2D line approximated by pixels](routines/line2D.ipynb)
     - [winding number of a polygon](routines/winding.ipynb), checks wheter a point is contained into a given polygon
-2. [Lectures and excercises][lectures]:
+2. [Lectures and excercises](lectures):
     - [1D Maxwell equations][maxwell1D] at planar interface and normal incidence
     - [Ising model][ising]
     - [finite quantum square well][qw1d] in 1D
