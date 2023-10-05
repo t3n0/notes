@@ -6,4 +6,4 @@ The permalink of this file points to this very same commit, not to the `main` br
 
 Permalinks are created by pressing `y` while visiting any github file in a repository.
 
-This is it: https://github.com/t3n0/notes/edit/594a96af1c0726da4bfdfff7b70fa1619d551253/other/permalink.md
+This is it: https://github.com/t3n0/notes/blob/f737a06e7c414144cd2a414b4f346a5614b65f6e/other/permalink.md
