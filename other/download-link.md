@@ -8,6 +8,9 @@ https://github.com/t3n0/notes/blob/main/other/download-link.md
    pollo
 </a>
 
+<a href="https://github.com/t3n0/notes/blob/main/other/download-link.md" target="_blank">Download</a>
+
+
 By clicking the above link, we will just move to this specific github page.
 
 To generate a link that starts the **download** immediately we need to do the following:
