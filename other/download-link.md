@@ -8,7 +8,7 @@ https://github.com/t3n0/notes/blob/main/other/download-link.md
 
 <a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank">Download2</a>
 
-<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank" download>Download3</a>
+<p><a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank" download>Download3</a></p>
 
 By clicking the above link, we will just move to this specific github page.
 
