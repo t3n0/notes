@@ -13,3 +13,4 @@ To generate a link that starts the **download** immediately we need to do the fo
 4. select `copy link` \
    ![raw2](raw2.png)
 6. paste the link anywhere you like, for example [here](https://github.com/t3n0/notes/raw/main/other/download-link.md).
+https://github.com/t3n0/notes/raw/main/other/download-link.md
