@@ -33,6 +33,7 @@ The purpose is to collect in a single place all these useful information without
    - [cloning a repo](git/git-cloning.md)
 6. [Other](other):
    - [markdown notes](other/markdown.md)
+   - [permalink VS main link](other/permalink.md)
    - [Shields and bagdes](https://shields.io/)
    - [Version naming](https://semver.org/)
 
