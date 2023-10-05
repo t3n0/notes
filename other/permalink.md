@@ -1,4 +1,4 @@
-# Link to main VS permalink to commit
+# Link to HEAD main VS permalink to commit
 
 Github offers several ways of linking the URL of a file:
 1. a link pointing to the HEAD of a branch (generally `main`)
