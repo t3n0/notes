@@ -1,14 +1,9 @@
-# A clickable link that directly starts the download
+# Download hyperlink
 
-We have a file in a repository that we want to share. For example, the link to this very same file is:
+If we have a file that the browser cannot read directly, we can create a raw link that starts the download.
+For example, the link to a `.zip` file in this repository is
 
 https://github.com/t3n0/notes/blob/main/other/download-link.md
-
-<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" download>Download1</a>
-
-<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank">Download2</a>
-
-<p><a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank" download>Download3</a></p>
 
 By clicking the above link, we will just move to this specific github page.
 
