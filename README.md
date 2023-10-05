@@ -34,6 +34,7 @@ The purpose is to collect in a single place all these useful information without
 6. [Other](other):
    - [markdown notes](other/markdown.md)
    - [permalink VS main link](other/permalink.md)
+   - [download links](other/download-link.md)
    - [Shields and bagdes](https://shields.io/)
    - [Version naming](https://semver.org/)
 
