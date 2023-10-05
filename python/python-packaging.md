@@ -56,7 +56,7 @@ Other files are also present, the most important are:
 - `LICENSE`, contains any license/copyright information
 - `pyproject.toml`, contains the *backend* installation instructions (`setuptools` in our case).
 
-As an example, the following shows a typical [**flat-layout**][flat_layout] folder structure:
+As an example ([zip file](python/flat_layout.zip)), the following shows a typical [**flat-layout**][flat_layout] folder structure:
 
 ```
 base_folder/
