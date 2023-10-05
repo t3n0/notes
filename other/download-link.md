@@ -4,7 +4,7 @@ We have a file in a repository that we want to share. For example, the link to t
 
 https://github.com/t3n0/notes/blob/main/other/download-link.md
 
- <a href="/images/myw3schoolsimage.jpg" download="w3logo">
+ <a href="https://github.com/t3n0/notes/blob/main/other/download-link.md" download="pollo">
   <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
 </a> 
 
