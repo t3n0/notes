@@ -10,7 +10,6 @@
 
 This repo is a collection of notes, links, scripts, lectures and ideas spanning a number of different topics.\
 The purpose is to collect in a single place all these useful information without googling them from scratch.\
-All the contents are proudly made by [me][me]. 
 
 # Contents
 
