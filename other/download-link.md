@@ -4,11 +4,11 @@ We have a file in a repository that we want to share. For example, the link to t
 
 https://github.com/t3n0/notes/blob/main/other/download-link.md
 
-<a href="https://github.com/t3n0/notes/blob/main/other/download-link.md" download>Download1</a>
+<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" download>Download1</a>
 
-<a href="https://github.com/t3n0/notes/blob/main/other/download-link.md" target="_blank">Download2</a>
+<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank">Download2</a>
 
-<a href="https://github.com/t3n0/notes/blob/main/other/download-link.md" target="_blank" download>Download3</a>
+<a href="https://raw.githubusercontent.com/t3n0/notes/main/other/download-link.md" target="_blank" download>Download3</a>
 
 By clicking the above link, we will just move to this specific github page.
 
