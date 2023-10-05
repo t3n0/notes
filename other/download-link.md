@@ -4,7 +4,10 @@ We have a file in a repository that we want to share. For example, the link to t
 
 https://github.com/t3n0/notes/blob/main/other/download-link.md
 
-https://github.com/downloads/t3n0/notes/blob/main/other/download-link.md
+ <a href="/images/myw3schoolsimage.jpg" download="w3logo">
+  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+</a> 
+
 
 By clicking the above link, we will just move to this specific github page.
 
