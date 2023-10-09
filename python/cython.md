@@ -28,7 +28,7 @@ The content of the `setup.py` file is
 from setuptools import setup, Extension
 
 myextensions = [
-    Extension(name = "carwash.fast", sources = ["carwash/veryfastCmodule.c"])
+    Extension(name = "carwash.fast", sources = ["carwash/fastmodule.c"])
 ]
 
 setup( ext_modules = myextensions )
