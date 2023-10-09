@@ -45,7 +45,8 @@ Notes:
 - `-i` means inplace, i.e. the `.c` files are created in the same folder of the `.pyx` files;
 - `-a` means annotation, an html file containing info about the cython to C conversion is also created (this is very important to further optimize the code).
 - the speed up mostly comes from **declaring the types** of the variables inside the for loop. Cython uses the `cdef` keyword to do that;
-- also, the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html).
+- also, the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html);
+- finally, I find it convenient to have a `cythonize.sh` script where I list all the modules I need to cythonize.
 
 ## 2. The `setup.py` file
 
