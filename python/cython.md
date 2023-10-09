@@ -94,20 +94,38 @@ Notes:
 We can now put everything together and try to build, install and test our speed-up package.\
 Download the [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip) with the project.
 
-1. Move to base folder;
-1. Cythonize the `.pyx` modules
+1. Extract it at your favorite location and dove to the base folder;
+1. Cythonize the `.pyx` modules (i.e. create the `.c` modules);
 ```bash
 ./cythonize.sh
 ```
-3. Build the package
+3. Build the package (i.e. create the `.tar.gz` and `.whl` distributions);
 ```bash
 python -m build
 ```
-4. Optional, distribuite it (twine or github release)
+4. Optional, distribuite it (with `twine` or via a github release);
 5. Install it
 ```bash
 pip install ./dist/carwash-0.1.tar.gz
 ```
 
-We can test wheter it works from a python interpreter
+We can test wheter it works from a python interpreter. On my machine I see
+```bash
+Python 3.11.5 (main, Sep 11 2023, 13:23:44) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import carwash.washing as w
+Hello from the washing module
+>>> import carwash.drying as d
+Hello from the drying module
+>>> import carwash.fastmodule as fm
+>>> import carwash.slowmodule as sm
+>>> fm.integrate_f(1,4,10000)
+13.498200045
+>>> import timeit
+>>> timeit.timeit('sm.integrate_f(1,4,10000)', number=1000, setup='import carwash.slowmodule as sm')
+2.933193664997816
+>>> timeit.timeit('fm.integrate_f(1,4,10000)', number=1000, setup='import carwash.fastmodule as fm')
+0.9179619419737719
+>>> 
+```
 
