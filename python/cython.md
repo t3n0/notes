@@ -52,7 +52,7 @@ Notes:
 
 Once we have all our `.c` modules in place, we just have to tell setuptools where they are in order to build the distribution.\
 This is done by writing a very specific `setup.py` file in the base folder, close to the usual `pyproject.toml`.\
-Supposed we have the following folder structure (download [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip)):
+Supposed we have the following folder structure:
 
 ```
 base_folder/
@@ -64,7 +64,7 @@ base_folder/
 │   ├── __init__.py
 │   ├── washing.py
 │   ├── fastmodule.c   <--- the .c module we created previously
-│   ├── slowmodule.py  <--- same module in pure python, for benchmark
+│   ├── slowmodule.py  <--- not necessary, just for benchmark
 │   └── drying.py
 └── tools/
     └── spray.py
@@ -88,3 +88,7 @@ This creates the source and built distributions (`.tar.gz` and `.whl`) ready to 
 Notes:
 - the `name` is the extension is how we call our module (i.e. `import carwash.fastmodule as fm`), it must match the file name;
 - the `ext_modules` argument wants a `list` of extensions objects.
+
+## 3. Workflow and testing the speed-up
+
+We can now put everything together and try to build, install and test our speed-up package (download [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip)).
