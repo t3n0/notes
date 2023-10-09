@@ -34,5 +34,5 @@ myextensions = [
 setup( ext_modules = myextensions )
 ```
 
-As [usual](python-packaging.md), to build the above we type `python -m build`.\
+As [usual](python-packaging.md), to **build the above** we type `python -m build`.\
 This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
