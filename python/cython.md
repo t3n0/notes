@@ -38,10 +38,15 @@ def integrate_f(double a, double b, int N):
 
 To translate this into the extension module `fastmodule.c` simply type
 ```
-cythonize -i -a module.pyx
+cythonize -i -a fastmodule.pyx
 ```
 
 Now, our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done.
+
+Notes:
+- `-i` means inplace, i.e. the `.c` files are created in the same folder of the `.pyx` files;
+- `-a` means annotation, an html file containing info about the cython to C conversion is also created (this is very important to further optimize the code).
+- the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html).
 
 ## 2. The `setup.py` file
 
