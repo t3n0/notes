@@ -18,7 +18,7 @@ There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quic
 2. **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.
 
 In the following we show the first variant (because I like it more).\
-Create a `module.pyx` file containing the following
+Create a `fastmodule.pyx` file containing the following
 
 ```python
 def f(double x):
@@ -36,14 +36,18 @@ def integrate_f(double a, double b, int N):
     return s * dx
 ```
 
-Now, to translate this into the extension module `module.c` simply type
+To translate this into the extension module `fastmodule.c` simply type
 ```
 cythonize -i -a module.pyx
 ```
 
+Now, our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done.
 
+## 2. The `setup.py` file
 
-Here is an example (download [folder zip](cython.zip)):
+Once we have all our `.c` modules in place, we just have to tell setuptools where they are in order to build the distribution.\
+This is done by writing a very specific `setup.py` file in the base folder, close to the usual `pyproject.toml`.\
+Supposed we have the following folder structure (download [folder zip](cython.zip)):
 
 ```
 base_folder/
@@ -54,7 +58,7 @@ base_folder/
 ├── carwash/
 │   ├── __init__.py
 │   ├── washing.py
-│   ├── fastmodule.c   <--- and of course we need a .c module
+│   ├── fastmodule.c   <--- the .c module we created previously
 │   └── drying.py
 └── tools/
     └── spray.py
