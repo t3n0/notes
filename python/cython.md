@@ -64,6 +64,7 @@ base_folder/
 │   ├── __init__.py
 │   ├── washing.py
 │   ├── fastmodule.c   <--- the .c module we created previously
+│   ├── slowmodule.py  <--- same module in pure python, for benchmark
 │   └── drying.py
 └── tools/
     └── spray.py
@@ -75,7 +76,7 @@ The content of the `setup.py` file is
 from setuptools import setup, Extension
 
 myextensions = [
-    Extension(name = "carwash.fast", sources = ["carwash/fastmodule.c"])
+    Extension(name = "carwash.fastmodule", sources = ["carwash/fastmodule.c"])
 ]
 
 setup( ext_modules = myextensions )
@@ -85,5 +86,5 @@ As [usual](python-packaging.md), to **build the above** we type `python -m build
 This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
 
 Notes:
-- the `name` is the extension is how we call our module, i.e. `import fast`;
+- the `name` is the extension is how we call our module (i.e. `import carwash.fastmodule as fm`), it must match the file name;
 - the `ext_modules` argument wants a `list` of extensions objects.
