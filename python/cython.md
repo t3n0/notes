@@ -1,6 +1,6 @@
 # Extension modules with `Cython`
 
-Python offers the capability to write C/C++ [**extension modules**](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html).
+Python offers the capability to import C/C++ [**extension modules**](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html).
 This modules will have a `.c` extension and can be built using **setuptools**, provided that the system has a **C/C++ compiler** installed.
 
 We already covered the instructions on how to build, distribute and install pure python packages on [this notes](python-packaging.md).\
@@ -12,6 +12,13 @@ To build the extension modules, we only need a **few modification** in our proje
 
 From the Cython official [documentation](https://cython.readthedocs.io/en/latest/src/quickstart/overview.html) we read that
 "Cython is a programming language that makes **writing C extensions** for the Python language **as easy as Python itself**".
+
+There are two syntax variants to write a module:
+1. **cython** variant: the module is `.pyx` file and use the `cdef` keyword, *no need* to `import cython`;
+2. **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.
+In the following we show the first variant (because I like it more).
+
+
 
 Here is an example (download [folder zip](cython.zip)):
 
