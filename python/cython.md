@@ -4,13 +4,14 @@ Python offers the capability to write C/C++ [**extension modules**](https://setu
 This modules will have a `.c` extension and can be built using **setuptools**, provided that the system has a **C/C++ compiler** installed.
 
 We already covered the instructions on how to build, distribute and install pure python packages on [this notes](python-packaging.md).\
-To build the extension modules, we only need a **few modification** in our folder structure:
+To build the extension modules, we only need a **few modification** in our project:
 1. we need to write the actual `.c` modules;
 2. we need a `setup.py` file along with the usual `pyproject.toml`.
 
 ## 1. Writing the `.c` modules using Cython
 
-
+From the Cython official [documentation](https://cython.readthedocs.io/en/latest/src/quickstart/overview.html) we read that
+"Cython is a programming language that makes writing C extensions for the Python language as easy as Python itself".
 
 Here is an example (download [folder zip](cython.zip)):
 
