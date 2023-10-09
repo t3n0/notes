@@ -22,7 +22,7 @@ The purpose is to collect in a single place all these useful information without
     - [Ising model][ising]
     - [finite quantum square well][qw1D] in 1D
     - [timing and profiling python][pyprofile]
-3. [Python common practise](python):
+3. [Python notes](python):
    - [build, distribute and install](python/python-packaging.md)
    - [system-wide scripts](python/python-scripts.md)
 4. [Ubuntu install and useful utilities](ubuntu):
