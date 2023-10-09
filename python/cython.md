@@ -21,3 +21,15 @@ base_folder/
 └── tools/
     └── spray.py
 ```
+
+The content of the `setup.py` file is
+
+```python
+from setuptools import setup, Extension
+
+myextensions = [
+    Extension(name = "carwash.fast", sources = ["carwash/veryfastCmodule.c"])
+]
+
+setup( ext_modules = myextensions )
+```
