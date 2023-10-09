@@ -16,6 +16,7 @@ From the Cython official [documentation](https://cython.readthedocs.io/en/latest
 There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html) that can be used to write a module:
 1. the **cython** variant: the module is a `.pyx` file and uses the `cdef` keyword, there is *no need* to `import cython`;
 2. the **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.\
+
 In the following we use the first variant (because I like it more).
 
 Create a `fastmodule.pyx` file containing the following
