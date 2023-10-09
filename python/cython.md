@@ -14,7 +14,7 @@ From the Cython official [documentation](https://cython.readthedocs.io/en/latest
 "Cython is a programming language that makes **writing C extensions** for the Python language **as easy as Python itself**".
 
 There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html) to write a module:
-1. **cython** variant: the module is `.pyx` file and use the `cdef` keyword, *no need* to `import cython`;
+1. **cython** variant: the module is a `.pyx` file and use the `cdef` keyword, *no need* to `import cython`;
 2. **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.
 In the following we show the first variant (because I like it more).
 
