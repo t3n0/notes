@@ -91,4 +91,23 @@ Notes:
 
 ## 3. Workflow and testing the speed-up
 
-We can now put everything together and try to build, install and test our speed-up package (download [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip)).
+We can now put everything together and try to build, install and test our speed-up package.\
+Download the [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip) with the project.
+
+1. Move to base folder;
+1. Cythonize the `.pyx` modules
+   ```
+   ./cythonize.sh
+   ```
+3. Build the package
+   ```
+   python -m build
+   ```
+4. Optional, distribuite it (twine or github release)
+5. Install it
+   ```
+   pip install ./dist/carwash-0.1.tar.gz
+   ```
+
+We can test wheter it works from a python interpreter
+
