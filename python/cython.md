@@ -15,7 +15,7 @@ From the Cython official [documentation](https://cython.readthedocs.io/en/latest
 
 There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html) that can be used to write a module:
 1. the **cython** variant: the module is a `.pyx` file and uses the `cdef` keyword, there is *no need* to `import cython`;
-2. the **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.\
+2. the **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variables following PEP-484 type hints and PEP 526 variable annotations.
 
 In the following we use the first variant (because I like it more).
 
@@ -39,12 +39,13 @@ To translate this into the extension module `fastmodule.c` simply type
 ```
 cythonize -i -a fastmodule.pyx
 ```
-Now, our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done.
+Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done!
 
 Notes:
 - `-i` means inplace, i.e. the `.c` files are created in the same folder of the `.pyx` files;
 - `-a` means annotation, an html file containing info about the cython to C conversion is also created (this is very important to further optimize the code).
-- the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html).
+- the speed up mostly comes from **declaring the types** of the variables inside the for loop. Cython uses the `cdef` keyword to do that;
+- also, the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html).
 
 ## 2. The `setup.py` file
 
@@ -81,3 +82,7 @@ setup( ext_modules = myextensions )
 
 As [usual](python-packaging.md), to **build the above** we type `python -m build`.\
 This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
+
+Notes:
+- the `name` is the extension is how we call our module, i.e. `import fast`;
+- the `ext_modules` argument wants a `list` of extensions objects.
