@@ -110,7 +110,7 @@ pip install ./dist/carwash-0.1.tar.gz
 ```
 
 We can test wheter it works from a python interpreter. On my machine I see
-```bash
+```
 Python 3.11.5 (main, Sep 11 2023, 13:23:44) [GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import carwash.washing as w
