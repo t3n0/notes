@@ -11,7 +11,7 @@ To build the extension modules, we only need a **few modification** in our proje
 ## 1. Writing the `.c` modules using Cython
 
 From the Cython official [documentation](https://cython.readthedocs.io/en/latest/src/quickstart/overview.html) we read that
-"Cython is a programming language that makes writing C extensions for the Python language as easy as Python itself".
+"Cython is a programming language that makes **writing C extensions** for the Python language **as easy as Python itself**".
 
 Here is an example (download [folder zip](cython.zip)):
 
