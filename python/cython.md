@@ -96,18 +96,18 @@ Download the [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.z
 
 1. Move to base folder;
 1. Cythonize the `.pyx` modules
-   ```
-   ./cythonize.sh
-   ```
+```bash
+./cythonize.sh
+```
 3. Build the package
-   ```
-   python -m build
-   ```
+```bash
+python -m build
+```
 4. Optional, distribuite it (twine or github release)
 5. Install it
-   ```
-   pip install ./dist/carwash-0.1.tar.gz
-   ```
+```bash
+pip install ./dist/carwash-0.1.tar.gz
+```
 
 We can test wheter it works from a python interpreter
 
