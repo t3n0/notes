@@ -129,3 +129,4 @@ Hello from the drying module
 >>> 
 ```
 
+We got more than a **3x** speed-up! And we can get more than **100x** if we declare the type of function `f(x)`!
