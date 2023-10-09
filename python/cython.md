@@ -13,13 +13,12 @@ To build the extension modules, we only need a **few modification** in our proje
 From the Cython official [documentation](https://cython.readthedocs.io/en/latest/src/quickstart/overview.html) we read that
 "Cython is a programming language that makes **writing C extensions** for the Python language **as easy as Python itself**".
 
-There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html) to write a module:
-1. **cython** variant: the module is a `.pyx` file and use the `cdef` keyword, *no need* to `import cython`;
-2. **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.
+There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html) that can be used to write a module:
+1. the **cython** variant: the module is a `.pyx` file and uses the `cdef` keyword, there is *no need* to `import cython`;
+2. the **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.\
+In the following we use the first variant (because I like it more).
 
-In the following we show the first variant (because I like it more).\
 Create a `fastmodule.pyx` file containing the following
-
 ```python
 def f(double x):
     return x ** 2 - x
@@ -35,12 +34,10 @@ def integrate_f(double a, double b, int N):
         s += f(a + i * dx)
     return s * dx
 ```
-
 To translate this into the extension module `fastmodule.c` simply type
 ```
 cythonize -i -a fastmodule.pyx
 ```
-
 Now, our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done.
 
 Notes:
