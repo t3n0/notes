@@ -4,7 +4,7 @@ Python offers the capability to write C/C++ **extension modules**.
 This modules will have a `.c` extension and can be built using **setuptools**, provided that the system has a **C/C++ compiler** installed.
 
 We already covered the instructions on how to build, distribute and install pure python packages on [this notes](python-packaging.md).\
-To build the extension modules, we only need a few modification in our folder structure.
+To build the extension modules, we only need a **few modification** in our folder structure.
 Here is an example (download [folder zip](cython.zip)):
 
 ```
@@ -33,3 +33,6 @@ myextensions = [
 
 setup( ext_modules = myextensions )
 ```
+
+As [usual](python-packaging.md), to build the above we type `python -m build`.\
+This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
