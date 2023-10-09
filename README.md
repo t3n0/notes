@@ -24,7 +24,7 @@ The purpose is to collect in a single place all these useful information without
     - [timing and profiling python][pyprofile]
 3. [Python notes](python):
    - [build, distribute and install](python/python-packaging.md)
-   - [build and distribute extension modules with cython](python/cython.md)
+   - [extension modules with cython](python/cython.md)
    - [system-wide scripts](python/python-scripts.md)
 4. [Ubuntu install and useful utilities](ubuntu):
    - [ubuntu clean install](ubuntu/clean-install.md)
