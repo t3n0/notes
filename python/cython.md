@@ -5,7 +5,7 @@ This modules will have a `.c` extension and can be built using **setuptools**, p
 
 We already covered the instructions on how to build, distribute and install pure python packages on [this notes](python-packaging.md).\
 To build the extension modules, we only need a few modification in our folder structure.
-Here is an example (download zip):
+Here is an example (download [folder zip](cython.zip)):
 
 ```
 base_folder/
