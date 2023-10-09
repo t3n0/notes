@@ -52,7 +52,7 @@ Notes:
 
 Once we have all our `.c` modules in place, we just have to tell setuptools where they are in order to build the distribution.\
 This is done by writing a very specific `setup.py` file in the base folder, close to the usual `pyproject.toml`.\
-Supposed we have the following folder structure (download [folder zip](cython.zip)):
+Supposed we have the following folder structure (download [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip)):
 
 ```
 base_folder/
