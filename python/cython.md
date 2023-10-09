@@ -12,11 +12,11 @@ base_folder/
 ├── README.md
 ├── LICENSE
 ├── pyproject.toml
-├── setup.py                <--- we need a very basic setup.py file
+├── setup.py           <--- we need a very basic setup.py file
 ├── carwash/
 │   ├── __init__.py
 │   ├── washing.py
-│   ├── veryfastCmodule.c   <--- and of course we need a .c module
+│   ├── fastmodule.c   <--- and of course we need a .c module
 │   └── drying.py
 └── tools/
     └── spray.py
