@@ -121,6 +121,8 @@ Hello from the drying module
 >>> import carwash.slowmodule as sm
 >>> fm.integrate_f(1,4,10000)
 13.498200045
+>>> sm.integrate_f(1,4,10000)
+13.498200045
 >>> import timeit
 >>> timeit.timeit('sm.integrate_f(1,4,10000)', number=1000, setup='import carwash.slowmodule as sm')
 2.933193664997816
