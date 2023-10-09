@@ -17,7 +17,29 @@ There are [two syntax variants](https://cython.readthedocs.io/en/latest/src/quic
 1. **cython** variant: the module is a `.pyx` file and use the `cdef` keyword, *no need* to `import cython`;
 2. **pure python** variant: the module is a standard `.py` file, we must `import cython` and declare variable following PEP-484 type hints and PEP 526 variable annotations.
 
-In the following we show the first variant (because I like it more :) ).
+In the following we show the first variant (because I like it more).\
+Create a `module.pyx` file containing the following
+
+```python
+def f(double x):
+    return x ** 2 - x
+
+
+def integrate_f(double a, double b, int N):
+    cdef int i
+    cdef double s
+    cdef double dx
+    s = 0
+    dx = (b - a) / N
+    for i in range(N):
+        s += f(a + i * dx)
+    return s * dx
+```
+
+Now, to translate this into the extension module `module.c` simply type
+```
+cythonize -i -a module.pyx
+```
 
 
 
