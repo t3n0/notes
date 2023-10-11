@@ -9,7 +9,7 @@
 # My notes, scripts and memos
 
 This repo is a collection of notes, links, scripts, lectures and ideas spanning a number of different topics.\
-The purpose is to collect in a single place all these useful information without googling them from scratch.\
+The purpose is to collect in a single place all these useful information without googling them from scratch.
 
 # Contents
 
