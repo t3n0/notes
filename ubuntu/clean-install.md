@@ -1,19 +1,34 @@
 # Ubuntu clean installation
 
-A collection of useful app and programs necessary on every Ubuntu machine.\
-*Click* on the topic to show the content.
+A collection of useful app and programs that I find usefull/necessary.
 
-## Mandatory apps
+## Apps and tools
 
-- synaptic\
-  `sudo apt install synaptic`
+- synaptic `sudo apt install synaptic`
 - [gnome shell extension](https://itsfoss.com/gnome-shell-extensions/)
-- nvidia drivers
 - system monitor
-- zotero:
-  + better bibtex
- 
-  
+- zotero
+- git
+- gnuplot
+- vscode
+- miniconda
+- espresso
+- wannier90
+- siesta
+
+## Drivers and libraries
+
+- nvidia drivers
+- better bibtex for zotero
+- `exfat-utils`,to operate on exfat filesystems
+- `eigen`, C++ library for linear algebra (needed to compile tortoise)
+- syntax highlight for gnuplot in gedit
+  + download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
+  + run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
+- blas, lapack, fftw, `sudo apt install libblas-dev liblapack-dev libfftw3-dev`
+- MPI: either mpich or openmpi, e.g. `sudo apt install mpich`
+- gfortran, coarrays
+- 
 
 ## GUI root access
  
@@ -30,40 +45,6 @@ AllowRoot=true
 5. Reboot.
 6. Select "Not Listed" at the login screen, then type "root" in the username field, and your root password in the password field.
 7. Now you should be logged in as root in your GUI desktop.
-
-## Intall synaptic
-
-Packages to install:
-- `exfat-utils`,to operate on exfat filesystems
-- `eigen`, C++ library for linear algebra (needed to compile tortoise)
-
-
-## Syntax highlight for gnuplot in gedit
-
- - download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
- - run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
-
-
-
-<details> <summary>
-Title
-</summary>
-
-Content
-
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,19 +73,7 @@ To uninstall:
 ## python useful packages:
  - `pip install evdev`: [package](https://python-evdev.readthedocs.io/en/latest/index.html) to handle user inputs (keybord, joypads, mouse).
 
-## `cupy`
-
-## `gfortran`
- - coarrays
- - blas and lapack
-
 ## `quantum-espresso`
-Needed libraries:
- - `sudo apt install libblas-dev liblapack-dev`
- - blas: `libblas-dev`
- - lapack: `liblapack-dev`
- - fftw: `libfftw3-dev`
- - MPI: either `mpich` (contains mpich implementation) or `openmpi` (contains LAM/MPI implementaion)
 
 To install:
 ```
@@ -123,13 +92,6 @@ Clean all files and configs:
 ```
 make veryclean
 ```
-
-## `git`
-
-## `gnuplot`
-
-## `zotero`
- - better bibtex for a better bibliography
 
 ## `VS Code`
 Download `.deb` file from <https://code.visualstudio.com/Download>.
