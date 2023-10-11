@@ -50,40 +50,6 @@ WORK IN PROGRESS (need to polish a little and create a link for every entry)
  - `XCrysDen`
  - many more
 
-## Miniconda
-Just anaconda without 239475623528 useless packages:
-- [download miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html)
-- run `bash path/to/miniconda/installer.sh`
-- `yes` agree license
-- choose default folder (home/user/miniconda3)
-- `yes` conda init
-- DONE
-
-To uninstall:
-- run `conda install anaconda-clean`
-- run `anaconda-clean --yes`
-- run `rm -rf /path/to/miniconda3`
-- DONE
-
-## Quantum-Espresso
-
-To install:
-```
-./configure
-make all
-```
-To add the binaries system-wide, add `export "</path/to/qe-x.y/bin>:$PATH"` to .bashrc
-
-To force a serial version installation:
-```
-./configure --disable-parallel
-make all
-```
-
-Clean all files and configs:
-```
-make veryclean
-```
 
 ## VS Code
 Download `.deb` file from <https://code.visualstudio.com/Download>.
