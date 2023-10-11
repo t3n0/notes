@@ -2,6 +2,8 @@
 
 A collection of useful apps, libraries and scripts in any scientific Ubuntu install.
 
+WORK IN PROGRESS (need to polish a little and create a link for every entry)
+
 ## General apps
 
 - synaptic `sudo apt install synaptic`
