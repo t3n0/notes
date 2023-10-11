@@ -8,9 +8,9 @@ https://wannier.org/download/
 To download an older version check this
 https://github.com/wannier-developers/wannier90/tags
 
-Install libraries
-sudo apt-get install libblas-dev liblapack-dev
-same for atlas?
+Install libraries\
+sudo apt-get install libblas-dev liblapack-dev\
+same for atlas?\
 mpich or openmpi (only for wannier90.x and postw90.x)
 
 sudo apt install gfortran
