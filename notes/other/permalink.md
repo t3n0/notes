@@ -8,7 +8,7 @@ Github offers several ways of linking the URL of a file:
 
 This very same markdown file has the `main` HEAD at the URL:
 
-https://github.com/t3n0/notes/blob/main/other/permalink.md
+https://github.com/t3n0/notes/blob/main/notes/other/permalink.md
 
 This is just the URL shown above in the navigation bar of the browser.
 
