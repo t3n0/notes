@@ -9,8 +9,7 @@ To download an older version check this
 https://github.com/wannier-developers/wannier90/tags
 
 Install libraries\
-sudo apt-get install libblas-dev liblapack-dev\
-same for atlas?\
+sudo apt install libblas-dev liblapack-dev\
 mpich or openmpi (only for wannier90.x and postw90.x)
 
 sudo apt install gfortran
@@ -28,7 +27,7 @@ create a make.inc file as follows
 F90 = gfortran
 
 COMMS  = mpi
-MPIF90 = mpgfortran #mpif90
+MPIF90 = mpif90
 
 FCOPTS = -O3
 LDOPTS =
@@ -37,15 +36,14 @@ LDOPTS =
 #FCOPTS = -fstrict-aliasing  -fno-omit-frame-pointer -fno-realloc-lhs -fcheck=bounds,do,recursion,pointer -ffree-form -Wall -Waliasing -Wsurprising -Wline-truncation -Wno-tabs -Wno-uninitialized -Wno-unused-dummy-argument -Wno-unused -Wno-character-truncation -O1 -g -fbacktrace
 #LDOPTS = -fstrict-aliasing  -fno-omit-frame-pointer -fno-realloc-lhs -fcheck=bounds,do,recursion,pointer -ffree-form -Wall -Waliasing -Wsurprising -Wline-truncation -Wno-tabs -Wno-uninitialized -Wno-unused-dummy-argument -Wno-unused -Wno-character-truncation -O1 -g -fbacktrace
 
-
-#=======================
-# ATLAS Blas and LAPACK
-#=======================
-#LIBS = -llapack -lf77blas -lcblas -latlas
-
 #=======================
 # System LAPACK and BLAS
 #=======================
-#LIBS = -llapack -lblas
+LIBS = -llapack -lblas
 ```
+
+NOTE:\
+- atlas is a mess to install, it can go to hell
+- lapack and blas are more than enough
+- all other install options can be found at https://github.com/wannier-developers/wannier90/blob/develop/README.install
 
