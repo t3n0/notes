@@ -52,7 +52,7 @@ Just anaconda without 239475623528 useless packages:
 To uninstall:
 - run `conda install anaconda-clean`
 - run `anaconda-clean --yes`
-- run `rm -rf /path/to/anaconda3`
+- run `rm -rf /path/to/miniconda3`
 - DONE
 
 ## python useful packages:
