@@ -3,6 +3,17 @@
 A collection of useful app and programs necessary on every Ubuntu machine.\
 *Click* on the topic to show the content.
 
+## Mandatory apps
+
+- synaptic: `sudo apt install synaptic`
+- [gnome shell extension](https://itsfoss.com/gnome-shell-extensions/)
+- nvidia drivers
+- system monitor
+- zotero:
+  + better bibtex
+ 
+  
+
 ## GUI root access
  
 1. Set a root password (may be the same as user password) with sudo passwd root. You'll be asked to type the password twice in case of a typo.
@@ -61,12 +72,6 @@ Content
  - `quantum-espresso`
  - `XCrysDen`
  - many more
-
-## `gnome shell extension`
-
-## `system monitor`
-
-## `nvidia drivers`
 
 ## `miniconda`
 Just anaconda without 239475623528 useless packages:
