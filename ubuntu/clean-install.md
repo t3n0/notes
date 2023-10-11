@@ -4,6 +4,10 @@ A collection of useful app and programs necessary on every Ubuntu machine.
 
 ## GUI root access
 
+<details><summary>Does not work</summary>
+[hi](https://hello.ca)
+</details>
+
 1. Set a root password (may be the same as user password) with sudo passwd root. You'll be asked to type the password twice in case of a typo.
 2. Unlock the root account with sudo passwd -u root.
 3. Edit sudo nano /etc/gdm3/custom.conf, and add the following line under [security]:
