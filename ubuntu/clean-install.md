@@ -3,8 +3,9 @@
 A collection of useful app and programs necessary on every Ubuntu machine.\
 *Click* on the topic to show the content.
 
+## GUI root access
 <details> <summary>
-GUI root access
+show
 </summary>
  
 1. Set a root password (may be the same as user password) with sudo passwd root. You'll be asked to type the password twice in case of a typo.
