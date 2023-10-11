@@ -1,7 +1,7 @@
 # Ubuntu clean installation
 
 A collection of useful app and programs necessary on every Ubuntu machine.\
-*Click* on the topic to open the content.
+*Click* on the topic to show the content.
 
 <details> <summary>
 GUI root access
@@ -23,16 +23,39 @@ AllowRoot=true
 
 </details>
 
+<details> <summary>
+Title
+</summary>
+
+Content
+
+</details>
+
+<details> <summary>
+`gedit`
+</summary>
+
+Syntax highlight for gnuplot:
+ - download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
+ - run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
+
+</details>
+
+
+</details>
+
+<details> <summary>
+`synaptic`
+</summary>
+
+Packages to install:
+- `exfat-utils`,to operate on exfat filesystems
+- `eigen`, C++ library for linear algebra (needed to compile tortoise)
+
+</details>
 
 
 
-## `gedit`
-- gnuplot language support, download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions).
-Install with `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
-
-## `synaptic`
- - exfat-utils (to operate on exfat filesystems)
- - eigen C++ library for linear algebra (needed to compile tortoise)
 
 ## `MateriApp`
 [MateriApp](https://ma.issp.u-tokyo.ac.jp/en) is a portal for material science simulation. Install the repository from the MateriApp githbug [page](https://github.com/cmsi/MateriAppsLive/wiki/UsingMateriAppsInDebian-en) and run `sudo apt-get install <software>`. Available softwares are:
