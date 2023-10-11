@@ -5,7 +5,8 @@ A collection of useful app and programs necessary on every Ubuntu machine.\
 
 ## Mandatory apps
 
-- synaptic: `sudo apt install synaptic`
+- synaptic\
+  `sudo apt install synaptic`
 - [gnome shell extension](https://itsfoss.com/gnome-shell-extensions/)
 - nvidia drivers
 - system monitor
