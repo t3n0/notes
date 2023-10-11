@@ -26,7 +26,7 @@ The purpose is to collect in a single place all these useful information without
    - [build, distribute and install](python/python-packaging.md)
    - [extension modules with cython](python/cython.md)
    - [system-wide scripts](python/python-scripts.md)
-4. [Ubuntu install and useful utilities](ubuntu):
+4. [Ubuntu notes](ubuntu):
    - [ubuntu clean install](ubuntu/clean-install.md)
    - [create a descktop launcher for an app](ubuntu/desktop-app-launcher.md)
 5. [Git](git):
