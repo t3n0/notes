@@ -52,6 +52,7 @@ useful packages:
 
 ## `quantum-espresso`
 Needed libraries:
+ - `sudo apt install libblas-dev liblapack-dev`
  - blas: `libblas-dev`
  - lapack: `liblapack-dev`
  - fftw: `libfftw3-dev`
