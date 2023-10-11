@@ -3,7 +3,7 @@
 A collection of useful app and programs necessary on every Ubuntu machine.\
 *Click* on the topic to show the content.
 
-### GUI root access
+## GUI root access
  
 1. Set a root password (may be the same as user password) with sudo passwd root. You'll be asked to type the password twice in case of a typo.
 2. Unlock the root account with sudo passwd -u root.
@@ -19,6 +19,20 @@ AllowRoot=true
 6. Select "Not Listed" at the login screen, then type "root" in the username field, and your root password in the password field.
 7. Now you should be logged in as root in your GUI desktop.
 
+## Intall synaptic
+
+Packages to install:
+- `exfat-utils`,to operate on exfat filesystems
+- `eigen`, C++ library for linear algebra (needed to compile tortoise)
+
+
+## Syntax highlight for gnuplot in gedit
+
+ - download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
+ - run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
+
+
+
 <details> <summary>
 Title
 </summary>
@@ -27,26 +41,16 @@ Content
 
 </details>
 
-<details> <summary>
-gedit
-</summary>
-
-Syntax highlight for gnuplot:
- - download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
- - run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
-
-</details>
 
 
-<details> <summary>
-synaptic
-</summary>
 
-Packages to install:
-- `exfat-utils`,to operate on exfat filesystems
-- `eigen`, C++ library for linear algebra (needed to compile tortoise)
 
-</details>
+
+
+
+
+
+
 
 
 
