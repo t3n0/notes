@@ -2,32 +2,41 @@
 
 A collection of useful apps, libraries and scripts in any scientific Ubuntu install.
 
-## Apps and tools
+## General apps
 
 - synaptic `sudo apt install synaptic`
 - [gnome shell extension](https://itsfoss.com/gnome-shell-extensions/)
-- system monitor
-- zotero
+  + system monitor
+  + ...
+
+
+## Coding
 - git
-- gnuplot
 - vscode
-- miniconda
+- gfortran, coarrays
+- eigen, C++ library for linear algebra (needed to compile tortoise)
+
+
+## Scientific software
+
+- gnuplot
+- zotero
+- + better bibtex for zotero
+- python and conda
 - espresso
 - wannier90
 - siesta
 
+
 ## Drivers and libraries
 
 - nvidia drivers
-- better bibtex for zotero
 - exfat-utils, to operate on exfat filesystems
-- eigen, C++ library for linear algebra (needed to compile tortoise)
 - syntax highlight for gnuplot in gedit
   + download from [GtkSourceView](https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions)
   + run `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-specs/`
 - blas, lapack, fftw, `sudo apt install libblas-dev liblapack-dev libfftw3-dev`
 - MPI: either mpich or openmpi, e.g. `sudo apt install mpich`
-- gfortran, coarrays
 
 ## Python packages:
  - `pip install evdev`: [package](https://python-evdev.readthedocs.io/en/latest/index.html) to handle user inputs (keybord, joypads, mouse).
