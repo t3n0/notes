@@ -23,9 +23,9 @@ AllowRoot=true
 
 </details>
 
-<details> <summary>
+<details> `<summary>
 Title
-</summary>
+</summary>`
 
 Content
 
