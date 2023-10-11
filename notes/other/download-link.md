@@ -13,6 +13,6 @@ To generate the download link we need to do the following:
    ![raw1](raw1.png)
 3. select `copy link` \
    ![raw2](raw2.png)
-4. paste the link anywhere you like, for example [here](https://github.com/t3n0/notes/raw/main/other/raw.zip).
+4. paste the link anywhere you like, for example [here](https://github.com/t3n0/notes/raw/main/notes/other/raw.zip).
 
 Clicking the above starts the download immediately.
