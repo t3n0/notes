@@ -3,7 +3,7 @@
 If we have a file that **the browser cannot read directly**, we can create a raw link that starts the **download**.\
 For example, the link to a `.zip` file in this repository is
 
-https://github.com/t3n0/notes/blob/main/other/raw.zip
+https://github.com/t3n0/notes/blob/main/notes/other/raw.zip
 
 By clicking the above link, we will just move to that specific `.zip` file but the browser cannot render it.
 
