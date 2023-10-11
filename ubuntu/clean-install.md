@@ -49,6 +49,12 @@ Just anaconda without 239475623528 useless packages:
 - `yes` conda init
 - DONE
 
+To uninstall:
+- run `conda install anaconda-clean`
+- run `anaconda-clean --yes`
+- run `rm -rf /path/to/anaconda3`
+- DONE
+
 ## python useful packages:
  - `pip install evdev`: [package](https://python-evdev.readthedocs.io/en/latest/index.html) to handle user inputs (keybord, joypads, mouse).
 
