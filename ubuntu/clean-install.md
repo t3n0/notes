@@ -1,13 +1,10 @@
 # Ubuntu clean installation
 
-A collection of useful app and programs necessary on every Ubuntu machine.
+A collection of useful app and programs necessary on every Ubuntu machine.\
+*Click* on the topic to open the content.
 
-## GUI root access
-
-<details><summary>Does not work</summary>
-[hi](https://hello.ca)
-</details>
-
+<details><summary>GUI root access</summary>
+ 
 1. Set a root password (may be the same as user password) with sudo passwd root. You'll be asked to type the password twice in case of a typo.
 2. Unlock the root account with sudo passwd -u root.
 3. Edit sudo nano /etc/gdm3/custom.conf, and add the following line under [security]:
@@ -21,6 +18,10 @@ AllowRoot=true
 5. Reboot.
 6. Select "Not Listed" at the login screen, then type "root" in the username field, and your root password in the password field.
 7. Now you should be logged in as root in your GUI desktop.
+8. 
+</details>
+
+
 
 
 ## `gedit`
