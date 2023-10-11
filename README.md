@@ -39,7 +39,7 @@ The purpose is to collect in a single place all these useful information without
    - [Shields and bagdes](https://shields.io/)
    - [Version naming](https://semver.org/)
 
-More contents to come, as long as I keep giving lectures.
+More contents to come.
 
 # Support
 
