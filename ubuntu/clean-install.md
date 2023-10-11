@@ -42,8 +42,6 @@ Syntax highlight for gnuplot:
 </details>
 
 
-</details>
-
 <details> <summary>
 synaptic
 </summary>
