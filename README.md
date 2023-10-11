@@ -27,11 +27,11 @@ The purpose is to collect in a single place all these useful information without
    - [extension modules with cython](python/cython.md)
    - [system-wide scripts](python/python-scripts.md)
 4. [Quantum-Espresso notes](espresso):
-   - installation
+   - [installation](espresso/installation.md)
 5. [Wannier90](wannier90):
-   - installation
+   - [installation](wannier90/installation.md)
 6. [Siesta](siesta):
-   - installation
+   - [installation](siesta/installation.md)
 7. [Git](git):
    - [git notes](git/git-notes.md)
    - [cloning a repo](git/git-cloning.md)
