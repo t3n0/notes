@@ -3,7 +3,7 @@
 A collection of useful app and programs necessary on every Ubuntu machine.\
 *Click* on the topic to open the content.
 
-## <details> <summary>
+<details> <summary>
 GUI root access
 </summary>
  
