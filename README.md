@@ -27,19 +27,19 @@ The purpose is to collect in a single place all these useful information without
    - [build, distribute and install](python/python-packaging.md)
    - [extension modules with cython](python/cython.md)
    - [system-wide scripts](python/python-scripts.md)
-5. [Quantum-Espresso notes](espresso):
+4. [Quantum-Espresso notes](espresso):
    - [installation](espresso/installation.md)
-6. [Wannier90](wannier90):
+5. [Wannier90](wannier90):
    - [installation](wannier90/installation.md)
-7. [Siesta](siesta):
+6. [Siesta](siesta):
    - [installation](siesta/installation.md)
-8. [Git](git):
+7. [Git](git):
    - [git notes](git/git-notes.md)
    - [cloning a repo](git/git-cloning.md)
-9. [Ubuntu notes](ubuntu):
+8. [Ubuntu notes](ubuntu):
    - [ubuntu clean install](ubuntu/clean-install.md)
    - [create a descktop launcher for an app](ubuntu/desktop-app-launcher.md)
-10. [Other](other):
+9. [Other](other):
    - [markdown notes](other/markdown.md)
    - [permalink VS main link](other/permalink.md)
    - [download links](other/download-link.md)
