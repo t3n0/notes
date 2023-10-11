@@ -40,8 +40,16 @@ Install with `sudo cp /path/to/gnuplot.lang /usr/share/gtksourceview-4/language-
 
 ## `nvidia drivers`
 
-## `conda`
-useful packages:
+## `miniconda`
+Just anaconda without 239475623528 useless packages:
+- [download miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html)
+- run `bash path/to/miniconda/installer.sh`
+- `yes` agree license
+- choose default folder (home/user/miniconda3)
+- `yes` conda init
+- DONE
+
+## python useful packages:
  - `pip install evdev`: [package](https://python-evdev.readthedocs.io/en/latest/index.html) to handle user inputs (keybord, joypads, mouse).
 
 ## `cupy`
