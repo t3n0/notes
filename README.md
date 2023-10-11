@@ -23,22 +23,23 @@ The purpose is to collect in a single place all these useful information without
     - [finite quantum square well][qw1D] in 1D
     - [timing and profiling python][pyprofile]
 3. [Python notes](python):
+   - [installation](python/installation.md)
    - [build, distribute and install](python/python-packaging.md)
    - [extension modules with cython](python/cython.md)
    - [system-wide scripts](python/python-scripts.md)
-4. [Quantum-Espresso notes](espresso):
+5. [Quantum-Espresso notes](espresso):
    - [installation](espresso/installation.md)
-5. [Wannier90](wannier90):
+6. [Wannier90](wannier90):
    - [installation](wannier90/installation.md)
-6. [Siesta](siesta):
+7. [Siesta](siesta):
    - [installation](siesta/installation.md)
-7. [Git](git):
+8. [Git](git):
    - [git notes](git/git-notes.md)
    - [cloning a repo](git/git-cloning.md)
-8. [Ubuntu notes](ubuntu):
+9. [Ubuntu notes](ubuntu):
    - [ubuntu clean install](ubuntu/clean-install.md)
    - [create a descktop launcher for an app](ubuntu/desktop-app-launcher.md)
-9. [Other](other):
+10. [Other](other):
    - [markdown notes](other/markdown.md)
    - [permalink VS main link](other/permalink.md)
    - [download links](other/download-link.md)
