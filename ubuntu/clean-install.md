@@ -1,6 +1,6 @@
 # Ubuntu clean installation
 
-A collection of useful app and programs that I find usefull/necessary.
+A collection of useful apps, libraries and scripts in any scientific Ubuntu install.
 
 ## Apps and tools
 
