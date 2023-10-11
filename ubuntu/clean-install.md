@@ -23,16 +23,16 @@ AllowRoot=true
 
 </details>
 
-<details> `<summary>
+<details> <summary>
 Title
-</summary>`
+</summary>
 
 Content
 
 </details>
 
 <details> <summary>
-`gedit`
+gedit
 </summary>
 
 Syntax highlight for gnuplot:
@@ -45,7 +45,7 @@ Syntax highlight for gnuplot:
 </details>
 
 <details> <summary>
-`synaptic`
+synaptic
 </summary>
 
 Packages to install:
