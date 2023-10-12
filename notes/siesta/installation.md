@@ -29,9 +29,12 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    sudo apt install cmake
    ```
    Check you CMake version by typing `CMake --version`. If this version is not up to date, you ha two options:
-   <details> <summary>1. Install via `snap`<\summary>
+   
+   <details>
+   <summary>Install via `snap`<\summary>
    pollo
    <\details>
+   
    2. Install manually
 
    **i. Snap install**
@@ -68,5 +71,5 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          and follow the instructions: accept license yes, version folder yes.
       5. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
 
-7. Now [download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format.
-8. 
+8. Now [download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format.
+9. 
