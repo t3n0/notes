@@ -49,16 +49,16 @@ The complete installation guide is [here](https://github.com/wannier-developers/
    ```
 8. (optional) Add `wannier90.x` and `postw90.x` to the PATH, so that they can run system-wide. Do either
    - add to `bin`
-   
-   ```bash
-   ln -s /path/to/wannier/folder/wannier90.x /usr/local/bin/wannier90.x
-   ln -s /path/to/wannier/folder/postw90.x /usr/local/bin/postw90.x
-   ```
+     
+     ```bash
+     ln -s /path/to/wannier/folder/wannier90.x /usr/local/bin/wannier90.x
+     ln -s /path/to/wannier/folder/postw90.x /usr/local/bin/postw90.x
+     ```
    - add to PATH:\
-   append this line to `.bashrc`
-   ```bash
-   export PATH="/path/to/wannier/folder:$PATH"
-   ```
+     append this line to `.bashrc`
+     ```bash
+     export PATH="/path/to/wannier/folder:$PATH"
+     ```
 9. Enjoy!
 
 NOTES:
