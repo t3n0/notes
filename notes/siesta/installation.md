@@ -32,37 +32,37 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    1. Install via `snap`
    2. Install manually
 
-   ### 1. Snap install
+   **i. Snap install**
 
-   1. Uninstall the current CMake
-      ```bash
-      sudo apt purge --auto-remove cmake
-      ```
-   2. Simply run
-   ```bash
-   sudo snap install cmake --classic
-   ```
-   the `--classic` flag is necessary because cmake uses a classic [snap confinement](https://snapcraft.io/docs/snap-confinement).
+      1. Uninstall the current CMake
+         ```bash
+         sudo apt purge --auto-remove cmake
+         ```
+      2. Simply run
+         ```bash
+         sudo snap install cmake --classic
+         ```
+         the `--classic` flag is necessary because cmake uses a classic [snap confinement](https://snapcraft.io/docs/snap-confinement).
 
-   ### Manual install
+   **ii. Manual install**
 
-   1. Uninstall the current CMake
-      ```bash
-      sudo apt purge --auto-remove cmake
-      ```
-   2. Download the latest binary release from [cmake.org](https://cmake.org/download).\
-      For example, at the time of writing, this is `cmake-3.27.7-linux-x86_64.sh`.
-   3. Copy the script file in some meaningfull folder
-      ```bash
-      cp cmake-3.27.7-linux-x86_64.sh /home/user/cmake/
-      ```
-      Of course, replace the name with your cmake version.
-   4. Execute the script
-      ```bash
-      bash cmake-3.27.7-linux-x86_64.sh
-      ```
-      and follow the instructions: accept license yes, version folder yes.
-   5. Export the `bin` to PATH.
+      1. Uninstall the current CMake
+         ```bash
+         sudo apt purge --auto-remove cmake
+         ```
+      2. Download the latest binary release from [cmake.org](https://cmake.org/download).\
+         For example, at the time of writing, this is `cmake-3.27.7-linux-x86_64.sh`.
+      3. Copy the script file in some meaningfull folder
+         ```bash
+         cp cmake-3.27.7-linux-x86_64.sh /home/user/cmake/
+         ```
+         Of course, replace the name with your cmake version.
+      4. Execute the script
+         ```bash
+         bash cmake-3.27.7-linux-x86_64.sh
+         ```
+         and follow the instructions: accept license yes, version folder yes.
+      5. Export the `bin` to PATH.
 
 
 
