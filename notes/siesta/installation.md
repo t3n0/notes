@@ -52,7 +52,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          ```bash
          sudo apt purge --auto-remove cmake
          ```
-      3. Download the latest binary release from [cmake.org](https://cmake.org/download).\
+      3. Download the latest binary release from [cmake.org](https://cmake.org/download).
          For example, at the time of writing, this is `cmake-3.27.7-linux-x86_64.sh`.
       4. Copy the script file in some meaningfull folder
          ```bash
@@ -64,7 +64,8 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          bash cmake-3.27.7-linux-x86_64.sh
          ```
          and follow the instructions: accept license yes, version folder yes.
-      6. Export the `bin` to PATH.
+      6. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
+
 
 
 
