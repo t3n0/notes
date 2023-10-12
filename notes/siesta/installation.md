@@ -32,6 +32,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    
    <details>
    <summary>Install via snap</summary>
+      
       1. Uninstall the current CMake
          
          ```bash
@@ -43,14 +44,9 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          ```
          the `--classic` flag is necessary because cmake uses a classic [snap confinement](https://snapcraft.io/docs/snap-confinement).
    </details>
-   
-   2. Install manually
 
-   **i. Snap install**
-
-      
-
-   **ii. Manual install**
+   <details>
+   <summary>Install manually</summary>
 
       1. Uninstall the current CMake
          
@@ -70,6 +66,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          ```
          and follow the instructions: accept license yes, version folder yes.
       5. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
+   </details>
 
 8. Now [download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format.
 9. 
