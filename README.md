@@ -2,8 +2,6 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-[t3n0]: https://github.com/t3n0
-[email]: tenobaldi@gmail.com
 [maxwell1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/maxwell1D
 [ising]: https://github.com/t3n0/notes/tree/main/notes/lectures/ising%20model
 [qw1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/finite%20square%20well%201D
@@ -51,7 +49,7 @@ More contents to come.
 
 ## Support
 
-For any problems, questions or suggestions, please contact me at [email][email] or [github][t3n0].
+For any problems, questions or suggestions, please contact me at tenobaldi@gmail.com.
 
 ## License
 
