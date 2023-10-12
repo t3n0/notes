@@ -1,17 +1,18 @@
+# My notes, scripts and memos
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-[me]: https://github.com/t3n0
+[t3n0]: https://github.com/t3n0
+[email]: tenobaldi@gmail.com
 [maxwell1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/maxwell1D
 [ising]: https://github.com/t3n0/notes/tree/main/notes/lectures/ising%20model
 [qw1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/finite%20square%20well%201D
 [pyprofile]: https://github.com/t3n0/notes/tree/main/notes/lectures/profiling%20python
 
-# My notes, scripts and memos
-
 This repo is a collection of notes, links, scripts, lectures and ideas spanning a number of different topics.\
 The purpose is to collect in a single place all these useful information without googling them from scratch.
 
-# Contents
+## Contents
 
 1. [Routines](notes/routines):
     - [Fourier interpolation](notes/routines/fourier.ipynb)
@@ -48,11 +49,11 @@ The purpose is to collect in a single place all these useful information without
 
 More contents to come.
 
-# Support
+## Support
 
-For any problems, questions or suggestions, please contact me at tenobaldi@gmail.com.
+For any problems, questions or suggestions, please contact me at [email][email] or [github][t3n0].
 
-# License
+## License
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
