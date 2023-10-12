@@ -31,7 +31,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    Check you CMake version by typing `CMake --version`. If this version is not up to date, you ha two options:
    
    <details>
-   <summary>Install via `snap`<\summary>
+   <summary>Install via snap<\summary>
    pollo
    <\details>
    
