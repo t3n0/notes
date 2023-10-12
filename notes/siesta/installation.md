@@ -39,7 +39,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          ```bash
          sudo apt purge --auto-remove cmake
          ```
-      3. Simply run
+      2. Simply run
          ```bash
          sudo snap install cmake --classic
          ```
@@ -52,22 +52,19 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          ```bash
          sudo apt purge --auto-remove cmake
          ```
-      3. Download the latest binary release from [cmake.org](https://cmake.org/download).
+      2. Download the latest binary release from [cmake.org](https://cmake.org/download).
          For example, at the time of writing, this is `cmake-3.27.7-linux-x86_64.sh`.
-      4. Copy the script file in some meaningfull folder
+      3. Copy the script file in some meaningfull folder
          ```bash
          cp cmake-3.27.7-linux-x86_64.sh /home/user/cmake/
          ```
          Of course, replace the name with your cmake version.
-      5. Execute the script
+      4. Execute the script
          ```bash
          bash cmake-3.27.7-linux-x86_64.sh
          ```
          and follow the instructions: accept license yes, version folder yes.
-      6. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
+      5. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
 
-
-
-
-
-[Download](https://gitlab.com/siesta-project/siesta/-/releases)
+7. Now [download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format.
+8. 
