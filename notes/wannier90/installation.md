@@ -80,5 +80,5 @@ NOTES:
   ln -s /home/username/wannier90/wannier90-3.0.0/wannier90.x   /usr/local/bin/pollo.x
   ln -s /home/username/wannier90/wannier90-3.1.0/wannier90.x   /usr/local/bin/wannier90.x
   ```
-- The wannier installation guide suggest to use [atlas](http://math-atlas.sourceforge.net/) as the BLAS implementatio. I found it to be quite difficult to install.
-  So it can go to hell! Standard lapack and blas are more than enough.
+- The wannier installation guide suggest to use [atlas](http://math-atlas.sourceforge.net/) as the BLAS implementatio. I found it to be quite difficult to install.\
+  So it can go to **hell**! Standard lapack and blas are more than enough.
