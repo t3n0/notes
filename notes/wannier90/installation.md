@@ -85,5 +85,9 @@ The complete installation guide is [here](https://github.com/wannier-developers/
   which wannier90.x
   ```
   For example, in my case, wannier90 is already included in Quantum Espresso, so I get `/home/tentacolo/quantum-espresso/qe-7.1/bin/wannier90.x`
+- To remove a link type
+  ```bash
+  unlink /usr/local/bin/pollo.x
+  ```
 - The wannier installation guide suggest to use [atlas](http://math-atlas.sourceforge.net/) as the BLAS implementation. I found it to be quite difficult to install.\
   So it can go to **hell**! Standard lapack and blas are more than enough.
