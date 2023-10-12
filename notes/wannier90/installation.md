@@ -14,7 +14,7 @@ The complete installation guide is [here](https://github.com/wannier-developers/
    ```
 3. Install `gfortran`, aka the gcc f90 compiler
    ```bash
-   sudo apt install gfortran
+   sudo apt install build-essential gfortran
    ```
 4. Check GNU make version, e.g. `GNU Make 4.2.1`
    ```bash
