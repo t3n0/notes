@@ -29,7 +29,9 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    sudo apt install cmake
    ```
    Check you CMake version by typing `CMake --version`. If this version is not up to date, you ha two options:
-   1. Install via `snap`
+   <details> <summary>1. Install via `snap`<\summary>
+   pollo
+   <details>
    2. Install manually
 
    **i. Snap install**
