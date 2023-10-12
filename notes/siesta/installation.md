@@ -31,14 +31,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    Check you CMake version by typing `CMake --version`. If this version is not up to date, you ha two options:
    
    <details>
-   <summary>Install via snap<\summary>
-   pollo
-   <\details>
-   
-   2. Install manually
-
-   **i. Snap install**
-
+   <summary>Install via snap</summary>
       1. Uninstall the current CMake
          
          ```bash
@@ -49,6 +42,13 @@ The full installation manual can be found [here](https://docs.siesta-project.org
          sudo snap install cmake --classic
          ```
          the `--classic` flag is necessary because cmake uses a classic [snap confinement](https://snapcraft.io/docs/snap-confinement).
+   </details>
+   
+   2. Install manually
+
+   **i. Snap install**
+
+      
 
    **ii. Manual install**
 
