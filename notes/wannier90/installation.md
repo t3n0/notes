@@ -4,23 +4,24 @@ A super straight forward guide to instal [Wannier90](https://wannier.org/) on Ub
 The complete installation guide is [here](https://github.com/wannier-developers/wannier90/blob/develop/README.install).
 
 1. Install `blas` and `lapack` libraries
+   
    ```bash
    sudo apt install libblas-dev liblapack-dev
    ```
-2. Install an MPI implementation: either `mpich` or `openmpi`
+3. Install an MPI implementation: either `mpich` or `openmpi`
    ```bash
    sudo apt install mpich
    ```
-3. Install `gfortran`, aka the gcc f90 compiler
+4. Install `gfortran`, aka the gcc f90 compiler
    ```bash
    sudo apt install gfortran
    ```
-4. Check GNU make version, e.g. `GNU Make 4.2.1`
+5. Check GNU make version, e.g. `GNU Make 4.2.1`
    ```bash
    make -v
    ```
-5. [Download](https://wannier.org/download/) the latest wannier90 (older versions [here](https://github.com/wannier-developers/wannier90/tags));
-6. Unzip the folder at you favorite location and create a `make.inc` file with the following content
+6. [Download](https://wannier.org/download/) the latest wannier90 (older versions [here](https://github.com/wannier-developers/wannier90/tags))
+7. Unzip the folder at you favorite location and create a `make.inc` file with the following content
    ```
    #===================
    # gfortran
@@ -42,15 +43,15 @@ The complete installation guide is [here](https://github.com/wannier-developers/
    #=======================
    LIBS = -llapack -lblas
    ```
-7. Open the terminal in the base folder and run the following (this builds `wannier90.x` and `postw90.x` executables only)
+8. Open the terminal in the base folder and run the following (this builds `wannier90.x` and `postw90.x` executables only)
    ```bash
    make default
    ```
-8. (optional) Add `wannier90.x` and `postw90.x` to the PATH, so that they can run system-wide
+9. (optional) Add `wannier90.x` and `postw90.x` to the PATH, so that they can run system-wide
    ```bash
    pollo
    ```
-9. Enjoy!
+10. Enjoy!
 
 NOTE:\
 - atlas is a mess to install, it can go to hell
