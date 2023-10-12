@@ -52,7 +52,7 @@ The complete installation guide is [here](https://github.com/wannier-developers/
      
      ```bash
      ln -s /path/to/wannier/folder/wannier90.x /usr/local/bin/wannier90.x
-     ln -s /path/to/wannier/folder/postw90.x /usr/local/bin/postw90.x
+     ln -s /path/to/wannier/folder/postw90.x   /usr/local/bin/postw90.x
      ```
    - add to PATH: append this line to `.bashrc`
      ```bash
