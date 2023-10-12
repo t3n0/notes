@@ -1,6 +1,6 @@
-# Installing Siesta
+# Installing Siesta v5.0.0+
 
-Super straight forward guide to install [Siesta](https://siesta-project.org/siesta/) on Ubuntu (because windows... why?).\
+Super straight forward guide to install [Siesta](https://siesta-project.org/siesta/) version >=5.0.0 on Ubuntu (because windows... why?).\
 The full installation manual can be found [here](https://docs.siesta-project.org/projects/siesta/en/latest/how-to/index.html#how-to-build-siesta).
 
 1. Install `gfortran`
@@ -68,5 +68,8 @@ The full installation manual can be found [here](https://docs.siesta-project.org
       5. Export the `/home/user/cmake/bin` to PATH or link the binaries to the `/usr/local/bin`.
    </details>
 
-8. Now [download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format.
-9. 
+8. [Download](https://gitlab.com/siesta-project/siesta/-/releases) the latest release in the `.tar.gz` format and extract the content to `/home/user/siesta/`.
+9. Move to `/home/user/siesta/siesta-5.0.0` (depending on your version) and run
+   ```bash
+   cmake
+   ```
