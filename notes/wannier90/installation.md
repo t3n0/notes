@@ -64,6 +64,7 @@ NOTES:
 - To clean/remove/uninstall wannier90, simply type `make clean` or `make veryclean`.
 - If you want to install a new version of wannier90, you can either remove the old one (just nuke the folder) or you can simply install it by side.
   For example, assume the following folder structure
+  
   ```
   /home/username/
   └── wannier90/
