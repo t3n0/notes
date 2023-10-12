@@ -75,10 +75,10 @@ NOTES:
           ├── bunch of files
           └── wannier90.x      <-- version 3.1.0
   ```
-  We need to choose 2 different names for the symbolic links in `usr/local/bin`
+  We need to choose 2 different names for the symbolic links in `usr/local/bin`, for example (choose whatever name)
   ```bash
-  ln -s /home/username/wannier90/wannier90-3.0.0/wannier90.x   /usr/local/bin/wannier90.x
-  ln -s /home/username/wannier90/wannier90-3.1.0/wannier90.x   /usr/local/bin/wannier90-beta.x
+  ln -s /home/username/wannier90/wannier90-3.0.0/wannier90.x   /usr/local/bin/pollo.x
+  ln -s /home/username/wannier90/wannier90-3.1.0/wannier90.x   /usr/local/bin/wannier90.x
   ```
 - The wannier installation guide suggest to use [atlas](http://math-atlas.sourceforge.net/) as the BLAS implementatio. I found it to be quite difficult to install.
   So it can go to hell! Standard lapack and blas are more than enough.
