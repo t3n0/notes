@@ -61,7 +61,10 @@ The complete installation guide is [here](https://github.com/wannier-developers/
 9. Enjoy!
 
 ## NOTES:
-- To clean/remove/uninstall wannier90, simply type `make clean` or `make veryclean`.
+- To clean/remove/uninstall wannier90
+  + `make clean` or `make veryclean`
+  + `unlink` the executables and/or remove the `export PATH ...`
+  + nuke the folder
 - If you want to install a new version of wannier90, you can either remove the old one (just nuke the folder) or you can simply install it by side.
   For example, assume the following folder structure
   
