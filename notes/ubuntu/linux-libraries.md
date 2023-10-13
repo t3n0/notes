@@ -6,7 +6,7 @@ There are several tools to find where/whether a library is installed and what ar
 1. To shows files and directories related to a library, for example `liblapack-dev`
 
    ```bash
-   dkpg - L liblapack-dev
+   dkpg -L liblapack-dev
    ```
 3. To show which library contains a file, for example `liblapack.so`
    ```bash
