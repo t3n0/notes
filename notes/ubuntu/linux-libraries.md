@@ -14,3 +14,12 @@ There are several tools to find where/whether a library is installed and what ar
    ```bash
    ldd wannier90.x
    ```
+
+
+## NOTES
+
+The tool `apt-file` does not come with default Ubuntu. One first has to install it and then update its cache
+```bash
+sudo apt install apt-file
+sudo apt-file update
+```
