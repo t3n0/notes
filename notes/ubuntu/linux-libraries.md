@@ -17,12 +17,12 @@ There are several tools to find where/whether a library is installed and what ar
    ldd path/to/wannier90.x
    ```
 
-When some libraries are used to implement some codes, but there are **multiple implementations** of that, is also usefull to look at `update-alternatives`
+When **multiple libraries** are used to implement the same codes, it is also usefull to look at `update-alternatives`
 
 ```bash
 update-alternatives --display mpirun
 ```
-This shows the different implementations of `mpirun` available in the system (most commonly `openmpi` and `mpich`) and their priority.
+This shows all the **different implementations** of `mpirun` available in the system (most commonly `openmpi` and `mpich`) and their priority.
 
 ## NOTES
 
