@@ -14,7 +14,7 @@ There are several tools to find where/whether a library is installed and what ar
    ```
 4. To show the libraries needed by a program, for example `wannier90.x`
    ```bash
-   ldd wannier90.x
+   ldd path/to/wannier90.x
    ```
 
 
