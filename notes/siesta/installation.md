@@ -77,3 +77,7 @@ The full installation manual can be found [here](https://docs.siesta-project.org
    ```bash
    cmake
    ```
+
+After one week of blasphemies, I didn't manage to install siesta.\
+Some flook problems, lua.c something, <readline/readline.h> not found ???\
+Siesta go to hell! I'll just stick with quantum-espresso.
