@@ -8,15 +8,21 @@ There are several tools to find where/whether a library is installed and what ar
    ```bash
    dkpg -L liblapack-dev
    ```
-3. To show which library contains a file, for example `liblapack.so`
+2. To show which library contains a file, for example `liblapack.so`
    ```bash
    apt-file search liblapack.so
    ```
-4. To show the libraries needed by a program, for example `wannier90.x`
+3. To show the libraries needed by a program, for example `wannier90.x`
    ```bash
    ldd path/to/wannier90.x
    ```
 
+When some libraries are used to implement some codes, but there are multiple implementations of that, is also usefull to look at `update-alternatives`
+
+```bash
+update-alternatives --display mpirun
+```
+This shows the different implementations of `mpirun` available in the system, and their priority.
 
 ## NOTES
 
