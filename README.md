@@ -38,6 +38,7 @@ The purpose is to collect in a single place all these useful information without
 8. [Ubuntu notes](notes/ubuntu):
    - [ubuntu clean install](notes/ubuntu/clean-install.md)
    - [create a descktop launcher for an app](notes/ubuntu/desktop-app-launcher.md)
+   - [managing labriries](notes/ubuntu/linux-libraries.md)
 9. [Other](notes/other):
    - [markdown notes](notes/other/markdown.md)
    - [permalink VS main link](notes/other/permalink.md)
