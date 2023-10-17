@@ -1,5 +1,6 @@
 # My notes, scripts and memos
 
+![GitHub Repo stars](https://img.shields.io/github/stars/t3n0/notes)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 [maxwell1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/maxwell1D
