@@ -40,6 +40,7 @@ The purpose is to collect in a single place all these useful information without
    - [ubuntu clean install](notes/ubuntu/clean-install.md)
    - [create a descktop launcher for an app](notes/ubuntu/desktop-app-launcher.md)
    - [managing libraries](notes/ubuntu/linux-libraries.md)
+   - [SSH quick guide](notes/ubuntu/ssh.md)
 9. [Other](notes/other):
    - [markdown notes](notes/other/markdown.md)
    - [permalink VS main link](notes/other/permalink.md)
