@@ -1,5 +1,7 @@
 # Basic guide to SSH
 
+Work in progress, this little guide is a recap of [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh).
+
 SSH stands for [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell) protocol and comes in several implementations.
 The most common one and also the one installed by default in Ubuntu is [OpenSSH](https://www.openssh.com/).
 The most important commands defined by OpenSSH are the following
