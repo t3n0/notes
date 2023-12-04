@@ -8,7 +8,7 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
 
 ## Installation
 
-1. To run PBS un Ubuntu we need the following libraries
+1. To *build* OpenPBS un Ubuntu we need the following libraries
    
    ```
    sudo apt install gcc make libtool libhwloc-dev libx11-dev \
@@ -18,9 +18,15 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
    automake g++
    ```
 
-2. Further
+2. To *run* OpenPBS we further need the following libraries
    
    ```
    sudo apt install expat libedit2 postgresql python3 postgresql-contrib \
    sendmail-bin tcl tk libical3 postgresql-server-dev-all
+   ```
+
+3. Download the [last version](https://github.com/openpbs/openpbs/releases/latest) of OpenPBS, unzip it and `cd` into the folder
+
+   ```
+
    ```
