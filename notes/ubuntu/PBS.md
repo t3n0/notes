@@ -40,10 +40,31 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    ./autogen.sh
    ```
 
-5. Display the available build parameters
+5. (optional) Display the available build parameters
 
    ```
    ./configure --help
    ```
 
-6.
+6. Building OpenPBS for Ubuntu
+
+   ```
+   ./configure --prefix=/opt/pbs
+   make
+   sudo make install
+   ```
+
+7. Run post-installation script
+
+   ```
+   sudo /opt/pbs/libexec/pbs_postinstall
+   ```
+   
+8. Setup the environment: change the value of PBS_START_MOM from zero to one in file `/etc/pbs.conf`
+
+   ```
+   sudo <editor> /etc/pbs.conf
+   ```
+   `<editor>` can be any text editor: `gedit`, `vim`, `nano`, ...
+
+$ sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp$ sudo systemctl start pbs.service
