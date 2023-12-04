@@ -60,11 +60,12 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    sudo /opt/pbs/libexec/pbs_postinstall
    ```
    
-8. Setup the environment: change the value of PBS_START_MOM from zero to one in file `/etc/pbs.conf`
-
+8. Setup the environment: edit file `/etc/pbs.conf` and change the value of PBS_START_MOM from zero to one.
+   `<editor>` can be any text editor: `gedit`, `vim`, `nano`, ...
+   
    ```
    sudo <editor> /etc/pbs.conf
    ```
-   `<editor>` can be any text editor: `gedit`, `vim`, `nano`, ...
+   
 
 $ sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp$ sudo systemctl start pbs.service
