@@ -66,6 +66,12 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    ```
    sudo <editor> /etc/pbs.conf
    ```
-   
 
-$ sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp$ sudo systemctl start pbs.service
+9. Persmissions and start
+
+    ```
+    sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp
+    sudo systemctl start pbs.service
+    ```
+
+10. All configured PBS services should now be running. Update your PATH and MANPATH or log out and back in.
