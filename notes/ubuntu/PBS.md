@@ -53,26 +53,26 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    make
    sudo make install
    ```
-   NOTE:  DEFAULT_INCLUDES = -I. -I$(top_builddir)/src/include -I/usr/include/python3.8
+   NOTE:  ./configure --prefix=/opt/pbs PYTHON=/usr/bin/python3.8
 
-7. Run post-installation script
+8. Run post-installation script
 
    ```
    sudo /opt/pbs/libexec/pbs_postinstall
    ```
    
-8. Setup the environment: edit file `/etc/pbs.conf` and change the value of PBS_START_MOM from zero to one.
+9. Setup the environment: edit file `/etc/pbs.conf` and change the value of PBS_START_MOM from zero to one.
    `<editor>` can be any text editor: `gedit`, `vim`, `nano`, ...
    
    ```
    sudo <editor> /etc/pbs.conf
    ```
 
-9. Persmissions and start
+10. Persmissions and start
 
     ```
     sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp
     sudo systemctl start pbs.service
     ```
 
-10. All configured PBS services should now be running. Update your PATH and MANPATH or log out and back in.
+11. All configured PBS services should now be running. Update your PATH and MANPATH or log out and back in.
