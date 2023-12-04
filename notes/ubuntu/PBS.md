@@ -50,10 +50,19 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
 
    ```
    ./configure --prefix=/opt/pbs
+   ```
+   NOTE: if you have anaconda installed in the system, it is possible that the `make` command will fail to find the python headers needed for the build.
+   In this case, you have to specify explicitly the location of you default python
+   ```
+   ./configure --prefix=/opt/pbs PYTHON=/usr/bin/python3.8
+   ```
+
+7. Run make and make install
+   ```
    make
    sudo make install
    ```
-   NOTE:  ./configure --prefix=/opt/pbs PYTHON=/usr/bin/python3.8
+   
 
 8. Run post-installation script
 
