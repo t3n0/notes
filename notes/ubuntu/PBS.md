@@ -53,7 +53,7 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    make
    sudo make install
    ```
-   NOTE:  DEFAULT_INCLUDES = -I. -I$(top_builddir)/src/include -I/home/tentacolo/miniconda3/include/python3.11 -I/home/tentacolo/miniconda3/include
+   NOTE:  DEFAULT_INCLUDES = -I. -I$(top_builddir)/src/include -I/usr/include/python3.8
 
 7. Run post-installation script
 
