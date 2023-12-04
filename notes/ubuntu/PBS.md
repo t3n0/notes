@@ -9,10 +9,17 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
 ## Installation
 
 1. To run PBS un Ubuntu we need the following libraries
+   
    ```
-   apt install gcc make libtool libhwloc-dev libx11-dev
-      libxt-dev libedit-dev libical-dev ncurses-dev perl
-      postgresql-server-dev-all postgresql-contrib python3-dev tcl-dev tk-dev swig
-      libexpat-dev libssl-dev libxext-dev libxft-dev autoconf
-      automake g++
+   sudo apt install gcc make libtool libhwloc-dev libx11-dev
+   libxt-dev libedit-dev libical-dev ncurses-dev perl
+   postgresql-server-dev-all postgresql-contrib python3-dev tcl-dev tk-dev swig
+   libexpat-dev libssl-dev libxext-dev libxft-dev autoconf
+   automake g++
+   ```
+
+2. Further
+   
+   ```
+   sudo apt install expat libedit2 postgresql python3 postgresql-contrib sendmail-bin tcl tk libical3 postgresql-server-dev-all
    ```
