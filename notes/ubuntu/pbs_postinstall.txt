@@ -1,0 +1,30 @@
+*** PBS Installation Summary
+***
+*** Postinstall script called as follows:
+*** /opt/pbs/libexec/pbs_postinstall '' 
+***
+*** No configuration file found.
+*** Creating new configuration file: /etc/pbs.conf
+*** Replacing /etc/pbs.conf with /etc/pbs.conf.23.06.06
+*** /etc/pbs.conf has been created.
+***
+*** Registering PBS as a service.
+update-rc.d: error: no runlevel symlinks to modify, aborting!
+Synchronizing state of pbs.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable pbs
+Created symlink /etc/systemd/system/multi-user.target.wants/pbs.service → /lib/systemd/system/pbs.service.
+***
+*** PBS_HOME is /var/spool/pbs
+*** Creating new file /var/spool/pbs/pbs_environment
+*** WARNING: TZ not set in /var/spool/pbs/pbs_environment
+***
+*** The PBS server has been installed in /opt/pbs/sbin.
+*** The PBS scheduler has been installed in /opt/pbs/sbin.
+***
+*** The PBS communication agent has been installed in /opt/pbs/sbin.
+***
+*** The PBS MOM has been installed in /opt/pbs/sbin.
+***
+*** The PBS commands have been installed in /opt/pbs/bin.
+***
+*** End of /opt/pbs/libexec/pbs_postinstall
