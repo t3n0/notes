@@ -28,5 +28,7 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
 3. Download the [last version](https://github.com/openpbs/openpbs/releases/latest) of OpenPBS, unzip it and `cd` into the folder
 
    ```
-
+   wget https://github.com/openpbs/openpbs/archive/refs/tags/v23.06.06.tar.gz
+   tar -xpvf openpbs-20.0.0.tar.gz
+   cd openpbs-20.0.0
    ```
