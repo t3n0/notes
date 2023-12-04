@@ -8,6 +8,7 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
 
 ## Installation
 
+Copy and paste the following into the terminal (to paste in the terminal use CTRL + SHIFT + V).
 1. To *build* OpenPBS un Ubuntu we need the following libraries
    
    ```
