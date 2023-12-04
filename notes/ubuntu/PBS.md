@@ -34,4 +34,16 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    cd openpbs-23.06.06
    ```
 
-4. pollo
+4. Generate the configure scripts and makefiles
+
+   ```
+   ./autogen.sh
+   ```
+
+5. Display the available build parameters
+
+   ```
+   ./configure --help
+   ```
+
+6.
