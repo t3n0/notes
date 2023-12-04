@@ -25,10 +25,12 @@ This guide is based on this [link](https://drtailor.medium.com/how-to-quickly-se
    sendmail-bin tcl tk libical3 postgresql-server-dev-all
    ```
 
-3. Download the [last version](https://github.com/openpbs/openpbs/releases/latest) of OpenPBS, unzip it and `cd` into the folder
+3. Download the [last version](https://github.com/openpbs/openpbs/releases/latest) (v23.06.06 at the present date) of OpenPBS, unzip it and `cd` into the folder
 
    ```
    wget https://github.com/openpbs/openpbs/archive/refs/tags/v23.06.06.tar.gz
-   tar -xpvf openpbs-20.0.0.tar.gz
-   cd openpbs-20.0.0
+   tar -xpvf v23.06.06.tar.gz
+   cd openpbs-23.06.06
    ```
+
+4. pollo
