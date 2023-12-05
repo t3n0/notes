@@ -9,10 +9,8 @@
 *** /etc/pbs.conf has been created.
 ***
 *** Registering PBS as a service.
-update-rc.d: error: no runlevel symlinks to modify, aborting!
 Synchronizing state of pbs.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable pbs
-Created symlink /etc/systemd/system/multi-user.target.wants/pbs.service → /lib/systemd/system/pbs.service.
 ***
 *** PBS_HOME is /var/spool/pbs
 *** Creating new file /var/spool/pbs/pbs_environment
