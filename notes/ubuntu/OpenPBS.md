@@ -69,7 +69,7 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    ```
    sudo /opt/pbs/libexec/pbs_postinstall
    ```
-   The output should look like [this](pbs_postinstall.txt)
+   The output should look like [this](pbs_postinstall.txt).
    
 9. Setup the environment: edit file `/etc/pbs.conf` and change the value of PBS_START_MOM from zero to one.
    `<editor>` can be any text editor: `gedit`, `vim`, `nano`, ...
