@@ -57,7 +57,7 @@ PBS_DATA_SERVICE_USER=postgres
    NOTE: if you have anaconda installed in the system, it is possible that the `make` command will fail to find the python headers needed for the build.
    In this case, you have to specify explicitly the location of you default python, for example:
    ```
-   ./configure --prefix=/opt/pbs --with-python=/usr/bin/python3.8 
+   ./configure --prefix=/opt/pbs PYTHON=/usr/bin/python3.8 
    ```
 
 7. Run make and make install
