@@ -34,6 +34,9 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    cd openpbs-23.06.06
    ```
 
+
+PBS_DATA_SERVICE_USER=postgres
+
 4. Generate the configure scripts and makefiles
 
    ```
