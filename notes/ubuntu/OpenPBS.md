@@ -78,11 +78,53 @@ Copy and paste the following into the terminal (to paste in the terminal use CTR
    sudo <editor> /etc/pbs.conf
    ```
 
-10. Persmissions and start
+10. Change persmissions
 
     ```
     sudo chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp
-    sudo systemctl start pbs.service
     ```
+
+11. Start the service
+
+    ```
+    sudo /etc/init.d/pbs start
+    ```
+    The output of this command should be [this](pbs_start.txt).
+
+13. Output
+
+    Starting PBS
+PBS Home directory /var/spool/pbs needs updating.
+Running /opt/pbs/libexec/pbs_habitat to update it.
+***
+*** Setting default queue and resource limits.
+***
+Communication failure.
+qmgr: cannot connect to server 
+Connection refused
+qmgr: cannot connect to server 
+Connection refused
+qmgr: cannot connect to server 
+Connection refused
+qmgr: cannot connect to server 
+Connection refused
+qmgr: cannot connect to server 
+Connection refused
+qmgr: cannot connect to server 
+Connection refused
+qterm: could not connect to server  (15010)
+cp: cannot stat '/usr/pgsql-12.16/lib/*': No such file or directory
+cp: cannot stat '/usr/pgsql-12.16/lib/*': No such file or directory
+cp: cannot stat '/usr/pgsql-12.16/share/timezonesets/*': No such file or directory
+cp: cannot stat '/usr/pgsql-12.16/share/timezonesets/*': No such file or directory
+cp: cannot stat '/usr/lib/postgresql/12/bin/pg_resetxlog': No such file or directory
+*** End of /opt/pbs/libexec/pbs_habitat
+Home directory /var/spool/pbs updated.
+/opt/pbs/sbin/pbs_comm ready (pid=110601), Proxy Name:wenjiabao:17001, Threads:4
+PBS comm
+PBS mom
+PBS sched
+Connecting to PBS dataservice...connected to PBS dataservice@wenjiabao
+PBS server
 
 11. All configured PBS services should now be running. Update your PATH and MANPATH or log out and back in.
