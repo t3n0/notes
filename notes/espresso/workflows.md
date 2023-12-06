@@ -8,9 +8,9 @@ The top entry of any workflow is a link to a zip file that can be download and r
 
 |     | DOS | Bands | proj Bands | spin Bands | kres DOS | Wannier90 |
 |-----|-----|------|-------|--------|--------|------|
-| `pw.x` | scf <br><br> nscf | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | |
-| `bands.x` | | default | default | spin | default | |
-| `projwfc.x` | default | | proj | spin | kres | |
-| `dos.x` | default | | | | | |
-| `plotband.x` | | default | proj | spin | | |
+|`pw.x`      |scf<br><br>nscf| scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | |
+|`bands.x`   | | default | default | spin | default | |
+|`projwfc.x` | default | | proj | spin | kres | |
+|`dos.x`     | default | | | | | |
+|`plotband.x`| | default | proj | spin | | |
 
