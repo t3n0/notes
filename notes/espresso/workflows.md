@@ -1,9 +1,10 @@
 # Quantum Espresso workflows
 
 A table with some of the possible workflows of Quantum Espresso.
-Each column represents a property that we want to calculate.
-For any given column, the entries are the executable tools (e.g. `pw.x`, `ph.x`, `dos.x`, etc.) needed to be run to execute that specific workflow.
-Each entry shows a brief description of the executable and links to an example.
+Each column represents a workflow with property that we want to calculate.
+The first column are the executable tools (e.g. `pw.x`, `ph.x`, `dos.x`, etc.) needed to be run to execute that specific workflow.
+For any given column, each entry is labeled by a number and a brief description of the executable.
+Numbers may have a "dot" such as 4.1, this happens when a workflow has multiple branches.
 The top entry of any workflow is a link to a zip file that can be download and run.
 
 |            | DOS                     | Bands                                                   | Wannier90 |
@@ -14,3 +15,6 @@ The top entry of any workflow is a link to a zip file that can be download and r
 |`dos.x`     | (4) default             |                                                         |           |
 |`plotband.x`|                         | (5) default <br><br> (6.1) non-coll <br><br> (8) proj   |           |
 
+Each workflow is executed by running the commands in increasing numerical order on the same branch. For example:
+ - standard bands workflow: (1) -> (2) -> (3) -> (4) -> (5) -> (7) -> (8) -> (9)
+ - non-coll bands workflow: (1) -> (2) -> (3) -> (4.1) -> (5) -> (6.1) -> (7) -> (8) -> (9)
