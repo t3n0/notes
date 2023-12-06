@@ -8,7 +8,7 @@ The top entry of any workflow is a link to a zip file that can be download and r
 
 |     | DOS | pDOS | Bands | pBands | sBands | kDOS | Wannier90 |
 |-----|-----|------|-------|--------|--------|------|-----------|
-| | scf | | | | | | |
+| | scf\\ nscf | | | | | | |
 | | nscf| | | | | | |
 | | | | | | | | |
 | | | | | | | | |
