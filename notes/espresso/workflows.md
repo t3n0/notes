@@ -7,6 +7,4 @@ Each entry shows a brief description of the executable and links to an example.
 The top entry of any workflow is a link to a zip file that can be download and run.
 
 |  pollo | DOS | pDOS | Bands | pBands | sBands | kDOS | Wannier90 |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
+| i| i|i |i |i |i |i |i |
