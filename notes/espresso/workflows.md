@@ -10,7 +10,7 @@ The top entry of any workflow is a link to a zip file that can be download and r
 |-----|-----|------|-------|--------|--------|------|
 |`pw.x`      |(1) scf<br><br>(2) nscf | (1) scf <br><br> (2) nscf <br><br> (3) bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | |
 |`bands.x`   | | (4) default <br><br> (8) spin| default | spin | default | |
-|`projwfc.x` | default | (6) proj <br><br> (9) spin | proj | spin | kres | |
-|`dos.x`     | default | | | | | |
+|`projwfc.x` | (3) default | (6) proj <br><br> (9) spin | proj | spin | kres | |
+|`dos.x`     | (4) default | | | | | |
 |`plotband.x`| | (5) default <br><br> (7) proj | proj | spin | | |
 
