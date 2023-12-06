@@ -6,11 +6,11 @@ For any given column, the entries are the executable tools (e.g. `pw.x`, `ph.x`,
 Each entry shows a brief description of the executable and links to an example.
 The top entry of any workflow is a link to a zip file that can be download and run.
 
-|     | DOS | pDOS | Bands | proj Bands | spin Bands | kres DOS | Wannier90 |
+|     | DOS | Bands | proj Bands | spin Bands | kres DOS | Wannier90 |
 |-----|-----|------|-------|--------|--------|------|-----------|
-| `pw.x` | scf <br><br> nscf | scf <br><br> nscf | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | |
-| `bands.x` | | | default | default | spin | default | |
-| `projwfc.x` | | default | | proj | spin | kres | |
-| `dos.x` | default | | | | | | |
-| `plotband.x` | | | default | proj | spin | | |
+| `pw.x` | scf <br><br> nscf | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | scf <br><br> nscf <br><br> bands | |
+| `bands.x` | | default | default | spin | default | |
+| `projwfc.x` | | | proj | spin | kres | |
+| `dos.x` | default | | | | | |
+| `plotband.x` | | default | proj | spin | | |
 
