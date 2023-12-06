@@ -45,10 +45,10 @@
    ```
 
 4. Run `bands.x`, writes bands to file `raw_bands` and writes symmetries to file `raw_bands.rap`.  
-   Optionally, compute the spin projections in a spin-orbit non-collinear system.
-   Spins are written to files `raw_bands1`, `raw_bands2`,`raw_bands3`.
-   Symmetry files for spin are **not** written explicitly.
-   One must **copy** `raw_bands.rap` to `raw_bands.1.rap`, `raw_bands.2.rap`, `raw_bands.3.rap`.
+   Optionally, compute the spin projections in a spin-orbit non-collinear system.  
+   Spins are written to files `raw_bands1`, `raw_bands2`,`raw_bands3`.  
+   Symmetry files for spin are **not** written explicitly.  
+   One must **copy** `raw_bands.rap` to `raw_bands.1.rap`, `raw_bands.2.rap`, `raw_bands.3.rap`.  
    ```
    filbands = 'raw_bands'
    lsigma(1) = .true.
@@ -56,12 +56,12 @@
    lsigma(3) = .true.
    ```
 
-6. Run `plotband.x`, computes the energy bands with symmetry.
-   Reads band structure from `raw_bands` and symmetry from `raw_band.rap`.
+6. Run `plotband.x`, computes the energy bands with symmetry.  
+   Reads band structure from `raw_bands` and symmetry from `raw_band.rap`.  
    Produces files named `bands.gnu.x.y`:
     - x, k-path identifier
     - y, symmetry identifier
-   The code runs interactively, but can also read from a script.
+   The code runs interactively, but can also read from a script.  
    ```
    raw_bands
    Emin Emax
