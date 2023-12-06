@@ -44,7 +44,7 @@
    0.0        0.0        0.0   1       # G
    ```
 
-4. Run `bands.x`, writes bands to file `raw_bands` and writes symmetries to file `raw_bands.rap`.
+4. Run `bands.x`, writes bands to file `raw_bands` and writes symmetries to file `raw_bands.rap`. 
    Optionally, compute the spin projections in a spin-orbit non-collinear system.
    Spins are written to files `raw_bands1`, `raw_bands2`,`raw_bands3`.
    Symmetry files for spin are **not** written explicitly.
