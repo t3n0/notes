@@ -16,5 +16,5 @@ The top entry of any workflow is a link to a zip file that can be download and r
 |`plotband.x`|                         | (5) default <br><br> (6.1) non-coll <br><br> (8) proj   |           |
 
 Each workflow is executed by running the commands in increasing numerical order on the same branch. For example:
- - standard bands workflow: (1) &rarr (2) -> (3) -> (4) -> (5) -> (7) -> (8) -> (9)
+ - standard bands workflow: (1) &rarr; (2) -> (3) -> (4) -> (5) -> (7) -> (8) -> (9)
  - non-coll bands workflow: (1) -> (2) -> (3) -> (4.1) -> (5) -> (6.1) -> (7) -> (8) -> (9)
