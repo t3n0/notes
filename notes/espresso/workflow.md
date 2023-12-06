@@ -46,7 +46,7 @@
 
 4. Run `bands.x`, writes bands to file `raw_bands` and writes symmetries to file `raw_bands.rap`.  
    Optionally, compute the spin projections in a spin-orbit non-collinear system.  
-   Spins are written to files `raw_bands1`, `raw_bands2`,`raw_bands3`.  
+   Spins are written to files `raw_bands.1`, `raw_bands.2`,`raw_bands.3`.  
    Symmetry files for spin are **not** written explicitly.  
    One must **copy** `raw_bands.rap` to `raw_bands.1.rap`, `raw_bands.2.rap`, `raw_bands.3.rap`.  
    ```
@@ -84,4 +84,26 @@
    1.0 0.0
    ```
 
+8. Run `projwfc.x` to compute wavefucntions projections on the chosen k-path.  
+   This writes a number of files `fildos.pdos_atm#1(X)_wfc#1(n_lY)` containing the projected dos.  
+   It also outputs a file `proj.projwfc_up`.
+   Copy this file to `raw_bands.proj` for the input of `plotband.x`.
+   ```
+   filproj = 'proj'
+   ```
+
+9. Run `plotband.x`, this reads `raw_bands`, `raw_bands.rap` AND `raw_bands.proj` (created at point 8).
+   We must specify which orbitals we want to include: just list the number identifier as it appears in the output of point 8.
+   ```
+   raw_bands
+   n1 n2 n3 ... nj
+   Emin Emax
+   proj.gnu
+   proj.ps
+   Efermi
+   Eticks Ezero
+   script.gnu
+   ```
+   Entries `n1 ... nj` are the `j` orbitals chosen to be projected (you need to look into the pseudopotential files to identify them).
+   
 
