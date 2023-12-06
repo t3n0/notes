@@ -61,6 +61,7 @@
    Produces files named `bands.gnu.x.y`:
     - x, k-path identifier
     - y, symmetry identifier
+   
    The code runs interactively, but can also read from a script.  
    ```
    raw_bands
