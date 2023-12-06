@@ -115,8 +115,8 @@
 
 
 pollo:
-[] ciao
-[x] pollo
-[] pillo
+ - [] ciao
+ - [x] pollo
+ - [] pillo
 
 
