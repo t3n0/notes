@@ -107,8 +107,16 @@
    Entries `n1 ... nj` are the `j` orbitals chosen to be projected (you need to look into the pseudopotential files to identify them).
    
 
-|----|-----|
+
 |pollo|awiurhwqofiuhwfouhfo|
 |---|---|
 |caiio|awrfepo|
 |d     |    ertre     |
+
+
+pollo:
+[] ciao
+[x] pollo
+[] pillo
+
+
