@@ -7,6 +7,11 @@ Just anaconda without 239475623528 useless packages:
 - `yes` conda init
 - DONE
 
+Once miniconda is installed, check for updates
+```
+conda update conda
+```
+
 To uninstall:
 - run `conda install anaconda-clean`
 - run `anaconda-clean --yes`
