@@ -51,10 +51,11 @@ My personal take is to create a `sci` environment where I install all the most c
    echo "conda activate sci" >> .bashrc
    ```
 
-3. Restart the terminal and install all the cool packages (in the current enc)
+3. Restart the terminal and install all the cool packages (in the current env)
    ```bash
    conda install numpy
    conda install matplotlib
+   conda install -c conda-forge notebook
    ```
 
 4. To check the history of the packages installed in the current env, run
