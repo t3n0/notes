@@ -67,3 +67,8 @@ My personal take is to create a `sci` environment where I install all the most c
    ```bash
    conda install --rev 8
    ```
+
+When $\Gamma = 0$ then
+$$
+p = \int dx
+$$
