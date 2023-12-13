@@ -69,4 +69,4 @@ My personal take is to create a `sci` environment where I install all the most c
    ```
 
 When $\Gamma = 0$ then
-$$ p = \int dx $$
+$$p = \int dx $$
