@@ -51,7 +51,8 @@ My personal take is to create a `sci` environment where I install all the most c
    echo "conda activate sci" >> .bashrc
    ```
 
-3. Restart the terminal and install all the cool packages
+3. Restart the terminal and install all the cool packages (in the current enc)
    ```bash
-   conda
+   conda install numpy
+   conda install matplotlib
    ```
