@@ -1,19 +1,35 @@
 ## Miniconda
-Just anaconda without 239475623528 useless packages:
-- [download miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html)
-- run `bash path/to/miniconda/installer.sh`
-- `yes` agree license
-- choose default folder (home/user/miniconda3)
-- `yes` conda init
-- DONE
+Just anaconda without 1 million useless packages.
 
-Once miniconda is installed, check for updates
-```
-conda update conda
-```
+## Installation
 
-To uninstall:
-- run `conda install anaconda-clean`
-- run `anaconda-clean --yes`
-- run `rm -rf /path/to/miniconda3`
-- DONE
+1. From the official website [download miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html) or run (for Linux)
+   ```bash
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   ```
+   
+2. Run the installer
+   ```bash
+   bash Miniconda3-latest-Linux-x86_64.sh
+   ```
+   Type `yes`: agree license  
+   Choose default folder: `home/user/miniconda3`
+   Type `yes` conda init
+
+3. Check for updates
+   ```bash
+   conda update conda
+   ```
+
+## To uninstall
+
+1. Run
+   ```bash
+   conda install anaconda-clean
+   anaconda-clean --yes
+   ```
+
+2. Nuke the folder
+   ```bash
+   rm -rf /path/to/miniconda3
+   ```
