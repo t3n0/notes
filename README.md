@@ -23,7 +23,7 @@ The purpose is to collect in a single place all these useful information without
     - [finite quantum square well][qw1D] in 1D
     - [timing and profiling python][pyprofile]
 3. [Python notes](notes/python):
-   - [installation](notes/python/installation.md)
+   - [miniconda installation](notes/python/installation.md)
    - [build, distribute and install](notes/python/python-packaging.md)
    - [extension modules with cython](notes/python/cython.md)
    - [system-wide scripts](notes/python/python-scripts.md)
