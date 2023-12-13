@@ -56,3 +56,13 @@ My personal take is to create a `sci` environment where I install all the most c
    conda install numpy
    conda install matplotlib
    ```
+
+4. To check the history of the packages installed in the current env, run
+   ```bash
+   conda list --revisions
+   ```
+   This will show all the *revisions* numbered from `rev 0`, `rev 1`, `rev 2`, ... and list all packages that have been installed in those revisions.
+   To restore a specific revision type
+   ```bash
+   conda install --rev 8
+   ```
