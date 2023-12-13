@@ -33,3 +33,25 @@ Just anaconda without 1 million useless packages.
    ```bash
    rm -rf /path/to/miniconda3
    ```
+
+## Setting up environments and useful packages
+
+Miniconda (as well as Anaconda) sets up a default environment called `base`.
+It is advisable to always leave this env pristine and install all necessary packages in newly created envs depending on the project we are working on.
+
+My personal take is to create a `sci` environment where I install all the most common scientific python packages and then make this environment the default.
+
+1. Create a new env `sci`
+   ```bash
+   conda create -n sci
+   ```
+
+2. Make `sci` default, i.e. append `conda activate sci` to .bashrc
+   ```bash
+   echo "conda activate sci" >> .bashrc
+   ```
+
+3. Restart the terminal and install all the cool packages
+   ```bash
+   conda
+   ```
