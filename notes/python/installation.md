@@ -1,4 +1,4 @@
-## Miniconda
+# Miniconda
 Just anaconda without 1 million useless packages.
 
 ## Installation
