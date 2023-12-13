@@ -12,8 +12,8 @@ Just anaconda without 1 million useless packages.
    ```bash
    bash Miniconda3-latest-Linux-x86_64.sh
    ```
-   Type `yes`: agree license  
-   Choose default folder: `home/user/miniconda3`
+   Type `yes` agree license  
+   Choose default folder: `home/user/miniconda3`  
    Type `yes` conda init
 
 3. Check for updates
