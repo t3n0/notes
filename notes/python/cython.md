@@ -92,7 +92,7 @@ Notes:
 ## 3. Workflow and testing the speed-up
 
 We can now put everything together and try to build, install and test our speed-up package.\
-Download the [folder zip](https://github.com/t3n0/notes/raw/main/python/cython.zip) with the project.
+Download the [folder zip](notes/python/cython.zip) with the project.
 
 1. Extract it at your favorite location and dove to the base folder;
 1. Cythonize the `.pyx` modules (i.e. create the `.c` modules);
