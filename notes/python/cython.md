@@ -42,10 +42,8 @@ Simply run the following command
 ```bash
 cythonize -i -a fastmodule.pyx
 ```
-**Done!**  
-Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`.
 
-### 2. Python script
+### OR 2. Python script
 
 Paste the following into a python script named `cythonize.py`
 
@@ -61,6 +59,9 @@ Then run
 ```
 python cythonize.py build_ext --inplace
 ```
+
+**Done!**  
+Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`.
 
 Both the above methods 1. and 2. perform the same task. They produce a `.c` file from the cython `.pyx` module.
 The advantage of method 1. is that it is just easier to type, so it can be useful during development of a very simple project.
