@@ -8,7 +8,7 @@ To build the extension modules, we only need a **few modification** in our proje
 1. we need to write the actual `.c` modules;
 2. we need a `setup.py` file along with the usual `pyproject.toml`.
 
-## 1. Writing the `.c` modules using Cython
+## Writing the `.c` modules using Cython
 
 From the Cython official [documentation](https://cython.readthedocs.io/en/latest/src/quickstart/overview.html) we read that
 "Cython is a programming language that makes **writing C extensions** for the Python language **as easy as Python itself**".
@@ -37,7 +37,7 @@ def integrate_f(double a, double b, int N):
 ```
 There are a number of ways to translate this into the extension module `fastmodule.c`:
 
-### 1. Command line
+1. Command line
 
 Simply run the following command
 ```bash
