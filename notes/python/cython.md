@@ -36,8 +36,7 @@ def integrate_f(double a, double b, int N):
     return s * dx
 ```
 There are a number of ways to translate this into the extension module `fastmodule.c`:
-
- - ### 1. Command line
+### 1. Command line
 
 Simply run the following command
 ```bash
@@ -50,25 +49,13 @@ Now our `fastmodule.c` can be imported and used from the python interpreter with
 
 Paste the following into a python script named `cythonize.py`
 
-    ```python
-    from setuptools import Extension, setup
-    from Cython.Build import cythonize
-    
-    myextensions = [
-        Extension(
-            name    = "integrate.fastmodule",
-            sources = ["integrate/fastmodule.pyx"]
-            )
-        ]
-    
-    setup(
-    	ext_modules = cythonize(
-    	    myextensions,
-    	    annotate = True,
-    	    language_level ="3str"
-    	    )
-    	)
-    ```
+```python
+from setuptools import Extension, setup
+from Cython.Build import cythonize
+
+myextensions = [Extension(name = "integrate.fastmodule", sources = ["integrate/fastmodule.pyx"])]
+setup(ext_modules = cythonize(myextensions, annotate = True, language_level ="3str"))
+```
 
 Then run
 ```
