@@ -89,6 +89,7 @@ base_folder/
 ├── cythonize.py       <--- the script used to generate the .c files
 └── integrate/
     ├── __init__.py
+    ├── main.py
     ├── fastmodule.c   <--- the .c module we created with method 1. or 2.
     └── slowmodule.py  <--- not necessary, just for benchmark
 ```
