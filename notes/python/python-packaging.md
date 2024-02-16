@@ -66,6 +66,7 @@ base_folder/
 ├── carwash/
 │   ├── __init__.py
 │   ├── washing.py
+│   ├── main.py
 │   └── drying.py
 └── tools/
     └── spray.py
