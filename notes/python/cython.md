@@ -175,4 +175,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 We got more than a **3x** speed-up between the native python and the simple cython implementation!  
-And we achieved more than **100x** if we declare the fast function with `cdef`!
+And we achieved more than **100x** speed-up when we declared the fast function with `cdef`!
