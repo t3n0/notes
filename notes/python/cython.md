@@ -34,6 +34,21 @@ def integrate_f(double a, double b, int N):
     for i in range(N):
         s += f(a + i * dx)
     return s * dx
+
+
+cdef double fastf(double x):
+    return x ** 2 - x
+
+
+def integrate_fastf(double a, double b, int N):
+    cdef int i
+    cdef double s
+    cdef double dx
+    s = 0
+    dx = (b - a) / N
+    for i in range(N):
+        s += fastf(a + i * dx)
+    return s * dx
 ```
 There are a number of ways to translate this into the extension module `fastmodule.c`:
 ### 1. Command line
@@ -159,4 +174,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-We got more than a **3x** speed-up! And we can get more than **100x** if we declare the type of function `f(x)`!
+We got more than a **3x** speed-up between the native python and the simple cython implementation!  
+And we achieved more than **100x** if we declare the fast function with `cdef`!
