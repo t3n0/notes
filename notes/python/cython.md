@@ -35,11 +35,45 @@ def integrate_f(double a, double b, int N):
         s += f(a + i * dx)
     return s * dx
 ```
-To translate this into the extension module `fastmodule.c` simply type
+There are a number of ways to translate this into the extension module `fastmodule.c`:
+### 1. Command line
+
+Simply run the following command
+    ```bash
+    cythonize -i -a fastmodule.pyx
+    ```
+**Done!**  
+Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`.
+
+### 2. Python script
+
+Paste the following into a python script named `cythonize.py`
+
+    ```python
+    from setuptools import Extension, setup
+    from Cython.Build import cythonize
+    
+    myextensions = [
+        Extension(
+            name    = "integrate.fastmodule",
+            sources = ["integrate/fastmodule.pyx"]
+            )
+        ]
+    
+    setup(
+    	ext_modules = cythonize(
+    	    myextensions,
+    	    annotate = True,
+    	    language_level ="3str"
+    	    )
+    	)
+    ```
+
+Then run
 ```
-cythonize -i -a fastmodule.pyx
+python cythonize.py build_ext --inplace
 ```
-Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`. Done!
+
 
 Notes:
 - `-i` means inplace, i.e. the `.c` files are created in the same folder of the `.pyx` files;
