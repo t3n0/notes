@@ -86,6 +86,7 @@ base_folder/
 ├── LICENSE
 ├── pyproject.toml
 ├── setup.py           <--- we need a very basic setup.py file
+├── cythonize.py       <--- the script used to generate the .c files
 └── integrate/
     ├── __init__.py
     ├── fastmodule.c   <--- the .c module we created with method 1. or 2.
@@ -101,14 +102,16 @@ myextensions = [Extension(name = "integrate.fastmodule", sources = ["integrate/f
 setup( ext_modules = myextensions )
 ```
 
+The above `setup.py` file is very similar to the `cythonize.py` script of method 2. above.
+This is useful because we can add the necessary compiler flags (such as `openMP`) very easily.  
 As [usual](python-packaging.md), to **build the above** we type `python -m build`.\
 This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
 
 Notes:
-- the `name` is the extension is how we call our module (i.e. `import carwash.fastmodule as fm`), it must match the file name;
+- the `name` in the extension is how we call our module (i.e. `import integrate.fastmodule as fm`), it must match the file name;
 - the `ext_modules` argument wants a `list` of extensions objects.
 
-## 3. Workflow and testing the speed-up
+## Workflow and testing the speed-up
 
 We can now put everything together and try to build, install and test our speed-up package.\
 Download the [folder zip](https://github.com/t3n0/notes/raw/main/notes/python/cython.zip) with the project.
