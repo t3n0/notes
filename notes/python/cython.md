@@ -37,7 +37,7 @@ def integrate_f(double a, double b, int N):
 ```
 There are a number of ways to translate this into the extension module `fastmodule.c`:
 
-1. Command line
+ - ### 1. Command line
 
 Simply run the following command
 ```bash
