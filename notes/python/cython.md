@@ -43,7 +43,7 @@ Simply run the following command
 cythonize -i -a fastmodule.pyx
 ```
 
-### OR 2. Python script
+### 2. Python script
 
 Paste the following into a python script named `cythonize.py`
 
@@ -61,9 +61,9 @@ python cythonize.py build_ext --inplace
 ```
 
 **Done!**  
-Now our `fastmodule.c` can be imported and used from the python interpreter with `import fastmodule`.
 
 Both the above methods 1. and 2. perform the same task. They produce a `.c` file from the cython `.pyx` module.
+Now our `fastmodule.c` can be **imported** and used from the python interpreter with `import fastmodule`.
 The advantage of method 1. is that it is just easier to type, so it can be useful during development of a very simple project.
 Method 2. is more flexible, because we can declare compiler options (such as `openMP`) that are necessary with more complex projects.
 
@@ -85,14 +85,10 @@ base_folder/
 ├── LICENSE
 ├── pyproject.toml
 ├── setup.py           <--- we need a very basic setup.py file
-├── carwash/
-│   ├── __init__.py
-│   ├── washing.py
-│   ├── fastmodule.c   <--- the .c module we created previously
-│   ├── slowmodule.py  <--- not necessary, just for benchmark
-│   └── drying.py
-└── tools/
-    └── spray.py
+└── integrate/
+    ├── __init__.py
+    ├── fastmodule.c   <--- the .c module we created with method 1. or 2.
+    └── slowmodule.py  <--- not necessary, just for benchmark
 ```
 
 The content of the `setup.py` file is
@@ -100,10 +96,7 @@ The content of the `setup.py` file is
 ```python
 from setuptools import setup, Extension
 
-myextensions = [
-    Extension(name = "carwash.fastmodule", sources = ["carwash/fastmodule.c"])
-]
-
+myextensions = [Extension(name = "integrate.fastmodule", sources = ["integrate/fastmodule.c"])]
 setup( ext_modules = myextensions )
 ```
 
