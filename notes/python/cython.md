@@ -42,6 +42,7 @@ Simply run the following command
 ```bash
 cythonize -i -a fastmodule.pyx
 ```
+or
 
 ### 2. Python script
 
