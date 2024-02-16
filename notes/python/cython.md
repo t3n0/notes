@@ -53,7 +53,7 @@ Paste the following into a python script named `cythonize.py`
 from setuptools import Extension, setup
 from Cython.Build import cythonize
 
-myextensions = [Extension(name = "integrate.fastmodule", sources = ["integrate/fastmodule.pyx"])]
+myextensions = [Extension(name = "fastmodule", sources = ["fastmodule.pyx"])]
 setup(ext_modules = cythonize(myextensions, annotate = True, language_level ="3str"))
 ```
 
@@ -62,15 +62,17 @@ Then run
 python cythonize.py build_ext --inplace
 ```
 
+Both the above methods 1. and 2. perform the same task. They produce a `.c` file from the cython `.pyx` module.
+The advantage of method 1. is that it is just easier to type, so it can be useful during development of a very simple project.
+Method 2. is more flexible, because we can declare compiler options (such as `openMP`) that are necessary with more complex projects.
 
 Notes:
 - `-i` means inplace, i.e. the `.c` files are created in the same folder of the `.pyx` files;
 - `-a` means annotation, an html file containing info about the cython to C conversion is also created (this is very important to further optimize the code).
 - the speed up mostly comes from **declaring the types** of the variables inside the for loop. Cython uses the `cdef` keyword to do that;
-- also, the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html);
-- finally, I find it convenient to have a `cythonize.sh` script where I list all the modules I need to cythonize.
+- also, the above code is not fully optimized. The `f(x)` funcntion has no declared type. Declaring the type of `f(x)` can further boost the speed up, see [here](https://cython.readthedocs.io/en/latest/src/quickstart/cythonize.html).
 
-## 2. The `setup.py` file
+## The `setup.py` file
 
 Once we have all our `.c` modules in place, we just have to tell setuptools where they are in order to build the distribution.\
 This is done by writing a very specific `setup.py` file in the base folder, close to the usual `pyproject.toml`.\
