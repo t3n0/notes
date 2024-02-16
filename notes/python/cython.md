@@ -105,7 +105,12 @@ setup( ext_modules = myextensions )
 
 The above `setup.py` file is very similar to the `cythonize.py` script of method 2. above.
 This is useful because we can add the necessary compiler flags (such as `openMP`) very easily.  
-As [usual](python-packaging.md), to **build the above** we type `python -m build`.\
+As [usual](python-packaging.md), to **build the above** we type
+
+```bash
+python -m build
+```
+
 This creates the source and built distributions (`.tar.gz` and `.whl`) ready to be installed or shared.
 
 Notes:
@@ -114,13 +119,13 @@ Notes:
 
 ## Workflow and testing the speed-up
 
-We can now put everything together and try to build, install and test our speed-up package.\
-Download the [folder zip](https://github.com/t3n0/notes/raw/main/notes/python/cython.zip) with the project.
+We can now put everything together and try to build, install and test our speed-up package.  
+Download the [folder zip](https://github.com/t3n0/notes/raw/main/notes/python/integrate.zip) with the project.
 
-1. Extract it at your favorite location and dove to the base folder;
-1. Cythonize the `.pyx` modules (i.e. create the `.c` modules);
+1. Extract it at your favorite location and move to the base folder;
+2. Cythonize the `.pyx` modules (i.e. create the `.c` modules);
 ```bash
-./cythonize.sh
+python cythonize.py build_ext --inplace
 ```
 3. Build the package (i.e. create the `.tar.gz` and `.whl` distributions);
 ```bash
@@ -129,28 +134,28 @@ python -m build
 4. Optional, distribuite it (with `twine` or via a github release);
 5. Install it
 ```bash
-pip install ./dist/carwash-0.1.tar.gz
+pip install ./dist/integrate-0.1.tar.gz
 ```
 
 We can test wheter it works from a python interpreter. On my machine I see
 ```
-Python 3.11.5 (main, Sep 11 2023, 13:23:44) [GCC 11.2.0] on linux
+Python 3.12.1 | packaged by conda-forge | (main, Dec 23 2023, 08:03:24) [GCC 12.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import carwash.washing as w
-Hello from the washing module
->>> import carwash.drying as d
-Hello from the drying module
->>> import carwash.fastmodule as fm
->>> import carwash.slowmodule as sm
->>> fm.integrate_f(1,4,10000)
-13.498200045
+>>> import integrate.fastmodule as fm
+>>> import integrate.slowmodule as sm
 >>> sm.integrate_f(1,4,10000)
 13.498200045
+>>> fm.integrate_f(1,4,10000)
+13.498200045
+>>> fm.integrate_fastf(1,4,10000)
+13.498200045
 >>> import timeit
->>> timeit.timeit('sm.integrate_f(1,4,10000)', number=1000, setup='import carwash.slowmodule as sm')
-2.933193664997816
->>> timeit.timeit('fm.integrate_f(1,4,10000)', number=1000, setup='import carwash.fastmodule as fm')
-0.9179619419737719
+>>> timeit.timeit('sm.integrate_f(1,4,10000)', number=1000, setup='import integrate.slowmodule as sm')
+3.5338838601019233
+>>> timeit.timeit('fm.integrate_f(1,4,10000)', number=1000, setup='import integrate.fastmodule as fm')
+1.1037028880091384
+>>> timeit.timeit('fm.integrate_fastf(1,4,10000)', number=1000, setup='import integrate.fastmodule as fm')
+0.024460873915813863
 >>> 
 ```
 
