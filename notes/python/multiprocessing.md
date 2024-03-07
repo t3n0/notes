@@ -8,11 +8,13 @@ In this notes we will explore two of them:
  - the [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) library (from the Pyhton standard library)
  - the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip)
 
-## `Multiprocessing`
+## `multiprocessing`
 
-The `multiprocessing` library is a useful parallelization library in machines with a [**shared memory**](https://en.wikipedia.org/wiki/Shared_memory) architecture.
+The `multiprocessing` library is a useful parallelization library for machines with a [**shared memory**](https://en.wikipedia.org/wiki/Shared_memory) architecture.
 A *laptop* or a *single node* in a HPC machine are examples of shared memory machines.
 This means that the `multiprocessing` is [not suitable](https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing) to distribute a parallel calculation over a cluster, where each machine/node don't share the same memory. To do so, we must look into `mpi`, see the next section.
+
+
 
 ## `mpi4py`
 
