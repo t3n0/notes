@@ -80,6 +80,11 @@ This is the task that we want to parallelise over the workers (processes). To do
 
 `Pool.map` wants a function (`hitCount` in our case) and a list of inputs for that function. Pyhton then takes care of evaluating the function over the given input list by distributing the workload over the workers. When the job is done, `Pool.map` returns a list with the results.
 
+Pay attention that it is up to us to determine how much work load to distribute to the workers. Specifically, we split the trials into a list of trials, e.g. with 500 trials and 8 processors, the trials for every job are `pool_trials = [62, 62, 62, 62, 62, 62, 62, 66]`. In this way, every processor receives a similar amount of work to be performed.
+
+
+
+
 ## `mpi4py`
 
 
