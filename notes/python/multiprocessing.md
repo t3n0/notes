@@ -161,7 +161,7 @@ myrank = comm.Get_rank()
 print(f"Hello! I am rank {myrank} in group of {nprocs} processes.")
 ```
 
-then run
+then run (my laptop has 4 cores)
 
 ```
 mpirun -n 4 python hello-world.py
