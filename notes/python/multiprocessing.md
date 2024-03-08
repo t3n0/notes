@@ -29,7 +29,7 @@ The value of $\pi$ is then
 
 where $h$ is the number of hits inside the unit circle (red dots in the figure) and $N$ is the total number of trials.
 
-A minimal working code goes as follows, `calculatePi.py`
+A minimal working code goes as follows (save it into a file `calculatePi.py`)
 
 ```python
 import multiprocessing as mp
