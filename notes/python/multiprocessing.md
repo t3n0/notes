@@ -12,9 +12,12 @@ In this notes we will explore two of them:
 
 The `multiprocessing` library is a useful parallelization library for machines with a [**shared memory**](https://en.wikipedia.org/wiki/Shared_memory) architecture.  
 A *laptop* or a *single node* in a HPC machine are examples of shared memory machines.
-This means that the `multiprocessing` is [not suitable](https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing) to distribute a parallel calculation over a cluster, where each machine/node don't share the same memory. To do so, we must look into `mpi`, see the next section.
+This means that the `multiprocessing` is [not suitable](https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing) to distribute a parallel calculation over a cluster, where each machine/node don't share the same memory (in the case of distributed memory systems we must look into `mpi`, see the next section).
 
-
+`multiprocessing` is part of the standard python library
+```
+import multiprocessing as mp
+```
 
 ## `mpi4py`
 
