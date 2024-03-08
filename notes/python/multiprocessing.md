@@ -106,7 +106,7 @@ We see that using 4 processors we achieve almost a **4x speed up**!
 [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) stands for Message Passing Interface.
 It is a communication protocol that defines how nodes/machines on a cluster can communicate between each other.
 The most common libraries that implement this protocol are [`OpenMPI`](https://www.open-mpi.org/) and [`MPICH`](https://www.mpich.org/).  
-Regarding python, `mpi4py` builds on top of the C++ MPI bindings and supports all the standards up to MPI-3.1 ([Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216)).
+Regarding python, `mpi4py` builds on top of the C++ MPI bindings and supports all the standards up to MPI-3.1 ([Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216)).  
 This tool allows to write prallel code on machines with a [distribute memory](https://en.wikipedia.org/wiki/Distributed_memory) architecture,
 which makes it the most common choice to write code on HPC clusters.
 
@@ -237,6 +237,28 @@ Hello! I am rank 3 in group of 5 processes.
 
 The following examples are based on this [source](https://fs.hlrs.de/projects/par/par_prog_ws/practical/MPI31single.zip).
 
+1. Broadcast a variable from the master process to all other processes
+   
+   ```python
+   from mpi4py import MPI
+   comm = MPI.COMM_WORLD
+   myrank = comm.Get_rank()
+   nprocs = comm.Get_size()
 
+   # We define n in all processes
+   n = None
+
+   # If we are process 0, we initialised the variable n
+   if (my_rank == 0):
+   	n = int(input("Enter n: ")) # e.g. we read it from input
+
+   # the command bcast broadcasts the vanlue of n from process 0 to all other processes
+   n = comm.bcast(n, root=0)
+
+   # now every process has n, we can do useful calculations, e.g.
+   myresult = n * myrank
+   
+   print(f"I am process {myrank} out of {nprocs}, my result is {myresult}")
+   ```
 
 
