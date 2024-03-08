@@ -75,7 +75,8 @@ def parallelPi(trials, nprocs = 1):
     return pi
 ```
 
-
+We see that the function `hitCount(trials)` is at the core of our implementation. This function only depends on the number of trials and returns the number of hits inside the unit circle.
+This is the task that we want to parallelise over the workers (processes). To do so we use the `Pool.map` method. This is the easiest way to distribute a task over a pool of processes.
 
 ## `mpi4py`
 
