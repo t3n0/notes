@@ -163,18 +163,73 @@ print(f"Hello! I am rank {myrank} in group of {nprocs} processes.")
 
 then run
 
-```bash
+```
 mpirun -n 4 python hello-world.py
 ```
 
 You should see
 
-```bash 
+```
 Hello! I am rank 0 in group of 4 processes.
 Hello! I am rank 1 in group of 4 processes.
 Hello! I am rank 2 in group of 4 processes.
 Hello! I am rank 3 in group of 4 processes.
+```
 
+MPI works in the following way:
+1. The command `mpirun -n 4` instructs the operative system to distribute the program to 4 processors.
+2. The program to execute is `python hello-world.py`.
+3. Every processor receives an *identical* copy of the program and executes it.
+4. As long as every process terminates, each processor prints the string to the standard output.
+
+It is important to understand that `mpirun` distributes the very same *identical* code to all processes.
+From that point on every process proceeds independently, unless a call to one of the MPI communication function is done.
+
+Note: generally, `mpirun` complains if the requested number of processes exceeds the number of physical cores in a machine.
+For example, in my laptop I have 4 physical cores (hyper-threading does not count). So if I try to submit the job with `mpirun -n 5` I get
+
+```
+$ mpirun -n 5 python basic.py 
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 5
+slots that were requested by the application:
+
+  python
+
+Either request fewer slots for your application, or make more slots
+available for use.
+
+A "slot" is the Open MPI term for an allocatable unit where we can
+launch a process.  The number of slots available are defined by the
+environment in which Open MPI processes are run:
+
+  1. Hostfile, via "slots=N" clauses (N defaults to number of
+     processor cores if not provided)
+  2. The --host command line parameter, via a ":N" suffix on the
+     hostname (N defaults to 1 if not provided)
+  3. Resource manager (e.g., SLURM, PBS/Torque, LSF, etc.)
+  4. If none of a hostfile, the --host command line parameter, or an
+     RM is present, Open MPI defaults to the number of processor cores
+
+In all the above cases, if you want Open MPI to default to the number
+of hardware threads instead of the number of processor cores, use the
+--use-hwthread-cpus option.
+
+Alternatively, you can use the --oversubscribe option to ignore the
+number of available slots when deciding the number of processes to
+launch.
+--------------------------------------------------------------------------
+```
+
+To overcome this simply add the `--oversubscribe` flag
+
+```
+mpirun -n 5 --oversubscribe python basic.py 
+Hello! I am rank 2 in group of 5 processes.
+Hello! I am rank 1 in group of 5 processes.
+Hello! I am rank 4 in group of 5 processes.
+Hello! I am rank 0 in group of 5 processes.
+Hello! I am rank 3 in group of 5 processes.
 ```
 
 
