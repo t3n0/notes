@@ -249,7 +249,7 @@ The following examples are based on this [source](https://fs.hlrs.de/projects/pa
    n = None
 
    # If we are process 0, we initialised the variable n
-   if (my_rank == 0):
+   if (myrank == 0):
    	n = int(input("Enter n: ")) # e.g. we read it from input
 
    # the command bcast broadcasts the vanlue of n from process 0 to all other processes
