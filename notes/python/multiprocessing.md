@@ -103,7 +103,10 @@ We see that using 4 processors we achieve almost a **4x speed up**!
 
 ## `mpi4py`
 
-
+[MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) stands for Message Passing Interface.
+It is a communication protocol that defines how nodes/machines on a cluster can communicate between each other.
+The most common libraries that implement this protocol are [`OpenMPI`](https://www.open-mpi.org/) and [`MPICH`](https://www.mpich.org/).
+Regarding python, `mpi4py` builds on top of the standard C++ MPI bindings and supports all the standards up to MPI-3.1, [Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216).
 
 install openmpi
 
