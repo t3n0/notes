@@ -147,7 +147,38 @@ Type "help", "copyright", "credits" or "license" for more information.
 MPI 3.1 is correctly installed.
 
 
-### Tutorial
+### Hello world
+
+We start with a very easy program: copy the following into a `hello-world.py` file
+
+```python
+from mpi4py import MPI
+
+comm = MPI.COMM_WORLD
+nprocs = comm.Get_size()
+myrank = comm.Get_rank()
+
+print(f"Hello! I am rank {myrank} in group of {nprocs} processes.")
+```
+
+then run
+
+```bash
+mpirun -n 4 python hello-world.py
+```
+
+You should see
+
+```bash 
+Hello! I am rank 0 in group of 4 processes.
+Hello! I am rank 1 in group of 4 processes.
+Hello! I am rank 2 in group of 4 processes.
+Hello! I am rank 3 in group of 4 processes.
+
+```
+
+
+### Tutorials
 
 The following examples are based on this [source](https://fs.hlrs.de/projects/par/par_prog_ws/practical/MPI31single.zip).
 
