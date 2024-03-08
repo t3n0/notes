@@ -189,7 +189,7 @@ NOTE: generally, `mpirun` complains if the requested number of processes exceeds
 For example, in my laptop I have 4 physical cores (hyper-threading does not count). So if I try to submit the job with `mpirun -n 5` I get
 
 ```
-$ mpirun -n 5 python basic.py 
+$ mpirun -n 5 python hello-world.py
 --------------------------------------------------------------------------
 There are not enough slots available in the system to satisfy the 5
 slots that were requested by the application:
@@ -224,7 +224,7 @@ launch.
 To overcome this simply add the `--oversubscribe` flag
 
 ```
-mpirun -n 5 --oversubscribe python basic.py 
+mpirun -n 5 --oversubscribe python hello-world.py
 Hello! I am rank 2 in group of 5 processes.
 Hello! I am rank 1 in group of 5 processes.
 Hello! I am rank 4 in group of 5 processes.
