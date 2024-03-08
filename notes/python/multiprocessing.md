@@ -8,7 +8,7 @@ In this notes we will explore two of them:
  - the [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) library (from the Pyhton standard library)
  - the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip)
 
-## `multiprocessing`
+## `multiprocessing` library
 
 The `multiprocessing` library is a useful parallelization library for machines with a [**shared memory**](https://en.wikipedia.org/wiki/Shared_memory) architecture.  
 A **laptop** or a **single node** in a HPC machine are examples of shared memory machines.
@@ -101,12 +101,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 We see that using 4 processors we achieve almost a **4x speed up**!
 
-## `mpi4py`
+## MPI for python: `mpi4py`
 
 [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) stands for Message Passing Interface.
 It is a communication protocol that defines how nodes/machines on a cluster can communicate between each other.
 The most common libraries that implement this protocol are [`OpenMPI`](https://www.open-mpi.org/) and [`MPICH`](https://www.mpich.org/).  
 Regarding python, `mpi4py` builds on top of the C++ MPI bindings and supports all the standards up to MPI-3.1, [Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216).
+This tool allows to write prallel code on machines with a [distribute memory](https://en.wikipedia.org/wiki/Distributed_memory) architecture,
+which makes it the most common choice to write code on HPC clusters.
 
 install openmpi
 
