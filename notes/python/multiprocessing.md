@@ -17,7 +17,7 @@ This means that the `multiprocessing` is [not suitable](https://stackoverflow.co
 `multiprocessing` is part of the standard python library. On this tutorial we will show how to use the [`Pool`](https://docs.python.org/3/library/multiprocessing.html#using-a-pool-of-workers) class:
 this class allows to create a pool of workers (i.e. processes) and provides several methods to distribute tasks to the workers.
 
-Let's write an example. Calculate $\Pi$
+Let's write an example: we want to calculate $\pi$ by counting how many random numbers fall inside a unit circle. ![pollo-picture](pollo.jpg)
 ```python
 import multiprocessing as mp
 ```
