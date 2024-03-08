@@ -125,16 +125,16 @@ install openmpi
 ```bash
 pip install mpi4py
 ```
+   If the above command fails, that could be because of the underlying anaconda environment.
+   In my case, I got a linker error regarding the `compiler_compat` folder.
+   Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
 
-If the above command fails, that could be because of the underlying anaconda environment.
-In my case, I got a linker error regarding the `compiler_compat` folder.
-Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
-
-3. (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key` (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
+3. (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key`
+   (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
    To solve this just add the following to your `.bashrc`
 
-   ```bash
-   export HWLOC_COMPONENTS="-gl"
-   ```
+```bash
+export HWLOC_COMPONENTS="-gl"
+```
 
 
