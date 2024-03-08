@@ -14,10 +14,14 @@ The `multiprocessing` library is a useful parallelization library for machines w
 A *laptop* or a *single node* in a HPC machine are examples of shared memory machines.
 This means that the `multiprocessing` is [not suitable](https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing) to distribute a parallel calculation over a cluster, where each machine/node don't share the same memory (in the case of distributed memory systems we must look into `mpi`, see the next section).
 
-`multiprocessing` is part of the standard python library
-```
+`multiprocessing` is part of the standard python library. On this tutorial we will show how to use the [`Pool`](https://docs.python.org/3/library/multiprocessing.html#using-a-pool-of-workers) class:
+this class allows to create a pool of workers (i.e. processes) and provides several methods to distribute tasks to the workers.
+
+```python
 import multiprocessing as mp
 ```
+
+
 
 ## `mpi4py`
 
