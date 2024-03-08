@@ -113,3 +113,6 @@ so to avoid the linker error
 
 run pip install mpi4py
 
+add `export HWLOC_COMPONENTS="-gl"` to .bashrc to prevent spawning of message `Invalid MIT-MAGIC-COOKIE-1 key`
+
+
