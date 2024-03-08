@@ -180,7 +180,7 @@ MPI works in the following way:
 1. The command `mpirun -n 4` instructs the operative system to distribute the program to 4 processors.
 2. The program to execute is `python hello-world.py`.
 3. Every processor receives an *identical* copy of the program and executes it.
-4. As long as every process terminates, each processor prints the string to the standard output.
+4. As long as every process terminates, each processor prints the string to the standard output and returns.
 
 It is important to understand that `mpirun` distributes the very same *identical* code to all processes.
 From that point on every process proceeds independently, unless a call to one of the MPI communication function is done.
