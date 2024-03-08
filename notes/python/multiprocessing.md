@@ -22,17 +22,11 @@ Let's write an example: we want to calculate $\pi$ by counting how many random n
 <p float="right">
   <img src="pihits.png" width="300" />
 </p>
-
-
 The value of $\pi$ is then
 ```math
 \pi \sim 4 \times \frac{\text{hits}}{\text{total}}
 ```
 
-
-![image](pihits.png){: style="float: left"}
-
-ollo
 
 ```python
 import multiprocessing as mp
