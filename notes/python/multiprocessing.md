@@ -19,8 +19,8 @@ this class allows to create a pool of workers (i.e. processes) and provides seve
 
 Let's write an example: we want to calculate $\pi$ by counting how many random numbers fall inside a unit circle.
 
-<p float="left">
-  <img src="pihits.png" width="100" />
+<p float="right">
+  <img src="pihits.png" width="300" />
 </p>
 
 
