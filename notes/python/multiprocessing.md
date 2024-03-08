@@ -132,9 +132,8 @@ The installation on Linux is easily done in the terminal via `apt` and `pip`:
 3. (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key`
    (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
    To solve this just add the following to your `.bashrc`
-
-```bash
-export HWLOC_COMPONENTS="-gl"
-```
+   ```bash
+   export HWLOC_COMPONENTS="-gl"
+   ```
 
 
