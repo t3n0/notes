@@ -29,7 +29,7 @@ The value of $\pi$ is then
 
 where $h$ is the number of hits inside the unit circle (red dots in the figure) and $N$ is the total number of trials.
 
-A minimal working code goes as follows
+A minimal working code goes as follows, `calculatePi.py`
 
 ```python
 import multiprocessing as mp
@@ -87,15 +87,15 @@ Let's test it!
 ```bash
 Python 3.12.1 | packaged by conda-forge | (main, Dec 23 2023, 08:03:24) [GCC 12.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import simple_mp as s
->>> s.serialPi(10**6)
+>>> import calculatePi
+>>> calculatePi.serialPi(10**6)
 3.140744
->>> s.parallelPi(10**6, 4)
+>>> calculatePi.parallelPi(10**6, 4)
 3.13976
 >>> import timeit
->>> timeit.timeit('s.serialPi(N)', number=5, setup='import simple_mp as s; N=10**6')
+>>> timeit.timeit('calculatePi.serialPi(N)', number=5, setup='import calculatePi; N=10**6')
 4.027927483002713
->>> timeit.timeit('s.parallelPi(N, 4)', number=5, setup='import simple_mp as s; N=10**6')
+>>> timeit.timeit('calculatePi.parallelPi(N, 4)', number=5, setup='import calculatePi; N=10**6')
 1.1624885639976128
 ```
 
