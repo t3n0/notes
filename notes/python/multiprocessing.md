@@ -116,15 +116,15 @@ The installation on Linux is easily done in the terminal via `apt` and `pip`:
 
 1. Install your flavour of MPI: OpenMPI or MPICH
 
-```bash
-install openmpi
-```
+   ```bash
+   apt install openmpi
+   ```
 
 2. Install `mpi4py` via pip
 
-```bash
-pip install mpi4py
-```
+   ```bash
+   pip install mpi4py
+   ```
    If the above command fails, that could be because of the underlying anaconda environment.
    In my case, I got a linker error regarding the `compiler_compat` folder.
    Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
