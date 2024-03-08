@@ -21,6 +21,11 @@ Let's write an example: we want to calculate $\pi$ by counting how many random n
 
 ![pi-hits-picture](pihits.png)
 
+The value of $\pi$ is then
+```math
+\pi \sim 4 \times \frac{\text{hits}}{\text{total}}
+```
+
 ```python
 import multiprocessing as mp
 ```
