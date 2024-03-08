@@ -29,6 +29,11 @@ The value of $\pi$ is then
 \pi \sim 4 \times \frac{\text{hits}}{\text{total}}
 ```
 
+
+![image](pihits.png){: style="float: left"}
+
+ollo
+
 ```python
 import multiprocessing as mp
 ```
