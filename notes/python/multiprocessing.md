@@ -99,7 +99,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 1.1624885639976128
 ```
 
-We see that using 4 processors we achieve almost a 4x speed up!
+We see that using 4 processors we achieve almost a **4x speed up**!
 
 ## `mpi4py`
 
