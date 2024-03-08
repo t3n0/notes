@@ -136,4 +136,12 @@ The installation on Linux is easily done in the terminal via `apt` and `pip`:
    export HWLOC_COMPONENTS="-gl"
    ```
 
-
+You can check the successful installation by opening the python interpreter
+```bash
+Python 3.12.1 | packaged by conda-forge | (main, Dec 23 2023, 08:03:24) [GCC 12.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mpi4py import MPI
+>>> MPI.Get_version()
+(3, 1)
+```
+MPI 3.1 is correctly installed.
