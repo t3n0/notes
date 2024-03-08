@@ -26,7 +26,8 @@ The value of $\pi$ is then
 ```math
 \pi \approx 4 \times \frac{h}{N}
 ```
-where 
+
+where $h$ is the number of hits inside the unit circle (red dots in the figure) and $N$ is the total number of trials.
 
 ```python
 import multiprocessing as mp
