@@ -11,7 +11,7 @@ In this notes we will explore two of them:
 ## `multiprocessing`
 
 The `multiprocessing` library is a useful parallelization library for machines with a [**shared memory**](https://en.wikipedia.org/wiki/Shared_memory) architecture.  
-A *laptop* or a *single node* in a HPC machine are examples of shared memory machines.
+A **laptop** or a **single node** in a HPC machine are examples of shared memory machines.
 This means that the `multiprocessing` is [not suitable](https://stackoverflow.com/questions/5181949/using-the-multiprocessing-module-for-cluster-computing) to distribute a parallel calculation over a cluster, where each machine/node don't share the same memory (in the case of distributed memory systems we must look into `mpi`, see the next section).
 
 <img align="right" width="300"  src="pihits.png">
@@ -29,8 +29,50 @@ The value of $\pi$ is then
 
 where $h$ is the number of hits inside the unit circle (red dots in the figure) and $N$ is the total number of trials.
 
+A minimal working code goes as follows
+
 ```python
 import multiprocessing as mp
+import numpy.random as rng
+
+
+def hitCount(trials):
+    """
+    Counts how many times the random variable hits the inner circle.
+    """
+    hits = 0
+    for _ in range(trials):
+        x = rng.random() 
+        y = rng.random()
+        if ( x**2 + y**2 < 1.0 ):
+            hits += 1 
+    return hits
+
+
+def serialPi(trials):
+    """
+    Calculates PI in serial.
+    Just a single call to the `hitCount` function.
+    """
+    hits = hitCount(trials)
+    pi = 4.0 * hits / trials  
+    return pi
+
+
+def parallelPi(trials, nprocs = 1):
+    """
+    Calculates PI in parallel.
+    The `hitCount` function is called using `nprocs` processes at once.
+    """    
+    trials_per_proc = trials // nprocs
+    pool_trials = [ trials_per_proc for i in range(nprocs-1) ]
+    pool_trials.append(trials - trials_per_proc * (nprocs-1))
+	
+    with mp.Pool(nprocs) as pool:
+        hits = pool.map(hitCount, pool_trials)
+    
+    pi = 4.0 * sum(hits) / trials  
+    return pi
 ```
 
 
