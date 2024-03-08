@@ -82,8 +82,24 @@ This is the task that we want to parallelise over the workers (processes). To do
 
 Pay attention that it is up to us to determine how much work load to distribute to the workers. Specifically, we split the trials into a list of trials, e.g. with 500 trials and 8 processors, the trials for every job are `pool_trials = [62, 62, 62, 62, 62, 62, 62, 66]`. In this way, every processor receives a similar amount of work to be performed.
 
+Let's test it!
 
+```bash
+Python 3.12.1 | packaged by conda-forge | (main, Dec 23 2023, 08:03:24) [GCC 12.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import simple_mp as s
+>>> s.serialPi(10**6)
+3.140744
+>>> s.parallelPi(10**6, 4)
+3.13976
+>>> import timeit
+>>> timeit.timeit('s.serialPi(N)', number=5, setup='import simple_mp as s; N=10**6')
+4.027927483002713
+>>> timeit.timeit('s.parallelPi(N, 4)', number=5, setup='import simple_mp as s; N=10**6')
+1.1624885639976128
+```
 
+We see that using 4 processors we achieve almost a 4x speed up!
 
 ## `mpi4py`
 
