@@ -185,7 +185,7 @@ MPI works in the following way:
 It is important to understand that `mpirun` distributes the very same *identical* code to all processes.
 From that point on every process proceeds independently, unless a call to one of the MPI communication function is done.
 
-Note: generally, `mpirun` complains if the requested number of processes exceeds the number of physical cores in a machine.
+NOTE: generally, `mpirun` complains if the requested number of processes exceeds the number of physical cores in a machine.
 For example, in my laptop I have 4 physical cores (hyper-threading does not count). So if I try to submit the job with `mpirun -n 5` I get
 
 ```
