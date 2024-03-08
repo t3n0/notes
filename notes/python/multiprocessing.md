@@ -106,18 +106,35 @@ We see that using 4 processors we achieve almost a **4x speed up**!
 [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) stands for Message Passing Interface.
 It is a communication protocol that defines how nodes/machines on a cluster can communicate between each other.
 The most common libraries that implement this protocol are [`OpenMPI`](https://www.open-mpi.org/) and [`MPICH`](https://www.mpich.org/).  
-Regarding python, `mpi4py` builds on top of the C++ MPI bindings and supports all the standards up to MPI-3.1, [Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216).
+Regarding python, `mpi4py` builds on top of the C++ MPI bindings and supports all the standards up to MPI-3.1 ([Dalcin-Fang](https://doi.org/10.1109/MCSE.2021.3083216)).
 This tool allows to write prallel code on machines with a [distribute memory](https://en.wikipedia.org/wiki/Distributed_memory) architecture,
 which makes it the most common choice to write code on HPC clusters.
 
+### Installation (Linux)
+
+The installation on Linux is easily done in the terminal via `apt` and `pip`:
+
+1. Install your flavour of MPI: OpenMPI or MPICH
+
+```bash
 install openmpi
+```
 
-rename the folder `compiler_compat` to some `compiler_compat_bak`
+2. Install `mpi4py` via pip
 
-so to avoid the linker error 
+```bash
+pip install mpi4py
+```
 
-run pip install mpi4py
+If the above command fails, that could be because of the underlying anaconda environment.
+In my case, I got a linker error regarding the `compiler_compat` folder.
+Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
 
-add `export HWLOC_COMPONENTS="-gl"` to .bashrc to prevent spawning of message `Invalid MIT-MAGIC-COOKIE-1 key`
+3. (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key` (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
+   To solve this just add the following to your `.bashrc`
+
+   ```bash
+   export HWLOC_COMPONENTS="-gl"
+   ```
 
 
