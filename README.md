@@ -28,6 +28,7 @@ The purpose is to collect in a single place all these useful information without
    - [extension modules with cython](notes/python/cython.md)
    - [multithreading](notes/python/multithreading.md)
    - [multiprocessing](notes/python/multiprocessing.md)
+   - [MPI with python](notes/python/mpi4py.md)
    - [system-wide scripts](notes/python/python-scripts.md)
 4. [Quantum-Espresso notes](notes/espresso):
    - [installation](notes/espresso/installation.md)
