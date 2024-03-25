@@ -116,7 +116,7 @@ conda info
 ```
 </details></ol>
 
-To add the [`conda-forge` channel](https://conda-forge.org/) and making it the highest priority, run
+To add the [`conda-forge`](https://conda-forge.org/) channel and making it the highest priority, run
 ```
 conda config --add channels conda-forge
 ```
