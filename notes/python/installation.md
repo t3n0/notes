@@ -69,4 +69,48 @@ My personal take is to create a `sci` environment where I install all the most c
    ```bash
    conda install --rev 8
    ```
+## Managing conda and other useful commands
 
+To have a summary of the current conda installation, just run
+```
+conda info
+```
+<ol><details><summary>You should get something like this (click to expand):</summary>
+```
+(mpi) tentacolo@wenjiabao:~$ conda info
+
+     active environment : mpi
+    active env location : /home/tentacolo/miniconda3/envs/mpi
+            shell level : 3
+       user config file : /home/tentacolo/.condarc
+ populated config files : /home/tentacolo/.condarc
+          conda version : 24.3.0
+    conda-build version : not installed
+         python version : 3.12.1.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=24.3.0=0
+                          __cuda=12.2=0
+                          __glibc=2.35=0
+                          __linux=6.5.0=0
+                          __unix=0=0
+       base environment : /home/tentacolo/miniconda3  (writable)
+      conda av data dir : /home/tentacolo/miniconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/tentacolo/miniconda3/pkgs
+                          /home/tentacolo/.conda/pkgs
+       envs directories : /home/tentacolo/miniconda3/envs
+                          /home/tentacolo/.conda/envs
+               platform : linux-64
+             user-agent : conda/24.3.0 requests/2.31.0 CPython/3.12.1 Linux/6.5.0-26-generic ubuntu/22.04.4 glibc/2.35 solver/libmamba conda-libmamba-solver/23.12.0 libmambapy/1.5.3
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+```
+</details></ol>
