@@ -4,9 +4,10 @@ Very often a program can be split into subroutines that can be exectuded indepen
 In a machine with a parallel architecture, the code can take advantage of this situation by distributing each of these independent tasks to different CPUs of the system.
 Nowadays, all modern computers, from laptops to High Perfomance Computers (HPCs), have a parallel architecture that can be exploited to speed up calculations.
 Python offers a multitude of libraries that can be used to achieve this.
-In this notes we will explore two of them:
+In this notes we will explore one of them:
  - the [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) library (from the Pyhton standard library)
- - the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip)
+
+For the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip), please refer to [these other notes](/mpi4py.md).
 
 ## `multiprocessing` library
 
