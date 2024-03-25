@@ -40,7 +40,7 @@ The installation on Linux is easily done in the terminal. There are two pathways
 
 **2. Conda installation**
 
-   Using conda, mpi4py is available in the `conda-forge` channel. Simply type
+- Using conda, mpi4py is available in the `conda-forge` channel. Simply type
    ```
    conda install mpi4py -c conda-forge
    ```
@@ -55,7 +55,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 MPI 3.1 is correctly installed.
 
-***
+---
 
 ## Hello world
 
