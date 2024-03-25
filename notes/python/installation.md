@@ -76,6 +76,7 @@ To have a summary of the current conda installation, just run
 conda info
 ```
 <ol><details><summary>You should get something like this (click to expand):</summary>
+
 ```
 (mpi) tentacolo@wenjiabao:~$ conda info
 
