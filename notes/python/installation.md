@@ -115,3 +115,21 @@ conda info
            offline mode : False
 ```
 </details></ol>
+
+To add the [`conda-forge` channel](https://conda-forge.org/) and making it the highest priority, run
+```
+conda config --add channels conda-forge
+```
+In this way, the next `conda install` will try to fecth a package from `conda-forge` first, if that's available.
+
+To query any specification about conda, a usefull command is
+```
+conda config --show [key]
+```
+For example, i want to list my channels
+```
+$ conda config --show channels
+channels:
+  - conda-forge
+  - defaults
+```
