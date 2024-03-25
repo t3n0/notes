@@ -7,7 +7,7 @@ Python offers a multitude of libraries that can be used to achieve this.
 In this notes we will explore one of them:
  - the [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) library (from the Pyhton standard library)
 
-For the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip), please refer to [these other notes](/mpi4py.md).
+For the [`mpi4py`](https://mpi4py.readthedocs.io/en/stable/) library (available with pip), please refer to [these other notes](/notes/python/mpi4py.md).
 
 ## `multiprocessing` library
 
