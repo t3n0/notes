@@ -116,29 +116,36 @@ The installation on Linux is easily done in the terminal. There are two pathways
 1. via `apt` and `pip`
 2. via `conda`
 
-**1. Pip installation**
+**Pip installation**
 
-	1. Install your flavour of MPI: OpenMPI or MPICH
-	
-	   ```bash
-	   apt install openmpi
-	   ```
-	
-	2. Install `mpi4py` via pip
-	
-	   ```bash
-	   pip install mpi4py
-	   ```
-	   If the above command fails, that could be because of the underlying anaconda environment.
-	   In my case, I got a linker error regarding the `compiler_compat` folder.
-	   Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
-	
-	3. (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key`
-	   (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
-	   To solve this just add the following to your `.bashrc`
-	   ```bash
-	   export HWLOC_COMPONENTS="-gl"
-	   ```
+- Install your flavour of MPI: OpenMPI or MPICH
+
+   ```bash
+   apt install openmpi
+   ```
+
+- Install `mpi4py` via pip
+
+   ```bash
+   pip install mpi4py
+   ```
+   If the above command fails, that could be because of the underlying anaconda environment.
+   In my case, I got a linker error regarding the `compiler_compat` folder.
+   Just rename the folder to some `compiler_compat_bak` and re-run `pip install`.
+
+- (optional) Depending on your system, it might happen that running an MPI code produces the warning `Invalid MIT-MAGIC-COOKIE-1 key`
+   (more info [here](https://unix.stackexchange.com/questions/630428/invalid-mit-magic-cookie-1-when-i-run-mpirun)).
+   To solve this just add the following to your `.bashrc`
+   ```bash
+   export HWLOC_COMPONENTS="-gl"
+   ```
+
+**2. Conda installation**
+
+Using conda, mpi4py is available in the `conda-forge` channel. Simply type
+```
+conda install mpi4py -c conda-forge
+```
 
 You can check the successful installation by opening the python interpreter
 ```bash
