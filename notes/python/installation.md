@@ -53,8 +53,10 @@ My personal take is to create a `sci` environment where I install all the most c
 
 3. Restart the terminal and install all the cool packages (in the current env)
    ```bash
+   conda install python
    conda install numpy
    conda install matplotlib
+   conda install scipy
    conda install -c conda-forge notebook
    ```
 
