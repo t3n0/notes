@@ -14,15 +14,16 @@ The purpose is to collect in a single place all these useful information without
 ## Contents
 
 1. [Routines](notes/routines):
+    - [Runge-Kutta](notes/routines/rk_family.ipynb) family routines for time integration
     - [Fourier interpolation](notes/routines/fourier.ipynb)
     - [2D line approximated by pixels](notes/routines/line2D.ipynb)
     - [winding number of a polygon](notes/routines/winding.ipynb), checks wheter a point is contained into a given polygon
-2. [Lectures and excercises](notes/lectures):
+3. [Lectures and excercises](notes/lectures):
     - [1D Maxwell equations][maxwell1D] at planar interface and normal incidence
     - [Ising model][ising]
     - [finite quantum square well][qw1D] in 1D
     - [timing and profiling python][pyprofile]
-3. [Python notes](notes/python):
+4. [Python notes](notes/python):
    - [miniconda installation](notes/python/installation.md)
    - [build, distribute and install](notes/python/python-packaging.md)
    - [extension modules with cython](notes/python/cython.md)
@@ -30,21 +31,21 @@ The purpose is to collect in a single place all these useful information without
    - [multiprocessing](notes/python/multiprocessing.md)
    - [MPI with python](notes/python/mpi4py.md)
    - [system-wide scripts](notes/python/python-scripts.md)
-4. [Quantum-Espresso notes](notes/espresso):
+5. [Quantum-Espresso notes](notes/espresso):
    - [installation](notes/espresso/installation.md)
-5. [Wannier90](notes/wannier90):
+6. [Wannier90](notes/wannier90):
    - [installation](notes/wannier90/installation.md)
-6. [Siesta](notes/siesta):
+7. [Siesta](notes/siesta):
    - [installation](notes/siesta/installation.md)
-7. [Git](notes/git):
+8. [Git](notes/git):
    - [git notes](notes/git/git-notes.md)
    - [cloning a repo](notes/git/git-cloning.md)
-8. [Ubuntu notes](notes/ubuntu):
+9. [Ubuntu notes](notes/ubuntu):
    - [ubuntu clean install](notes/ubuntu/clean-install.md)
    - [create a descktop launcher for an app](notes/ubuntu/desktop-app-launcher.md)
    - [managing libraries](notes/ubuntu/linux-libraries.md)
    - [SSH quick guide](notes/ubuntu/ssh.md)
-9. [Other](notes/other):
+10. [Other](notes/other):
    - [markdown notes](notes/other/markdown.md)
    - [permalink VS main link](notes/other/permalink.md)
    - [download links](notes/other/download-link.md)
