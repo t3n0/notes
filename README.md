@@ -18,6 +18,7 @@ The purpose is to collect in a single place all these useful information without
     - [Fourier interpolation](notes/routines/fourier.ipynb)
     - [2D line approximated by pixels](notes/routines/line2D.ipynb)
     - [winding number of a polygon](notes/routines/winding.ipynb), checks wheter a point is contained into a given polygon
+    - [seesaw derivative](notes/routines/seesaw_derivative.ipynb)
 3. [Lectures and excercises](notes/lectures):
     - [1D Maxwell equations][maxwell1D] at planar interface and normal incidence
     - [Ising model][ising]
