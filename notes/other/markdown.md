@@ -58,4 +58,11 @@ The latter command produces the following link image:
 
 [![pollo](pollo.jpg)](https://tentacolo.com)
 
+### Vscode extensions
+
+Finally, a short paragraph about the vscode extensions that I use for writing markdown.
+There are many extension to improve the writing of markdown files
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
 [teno]: https://tentacolo.com
