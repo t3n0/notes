@@ -72,4 +72,9 @@ Go to `file`->`preferences`->`settings` and type `@lang:markdown`. Then select:
 
 This way I don't get **plain text** suggestion but I do get **code snippet** suggestion while typing. Nice!
 
+At last, I don't like many of the default intellisense snippets. To avoid them to pop up while type do the following:
+- `ctrl`+`shift`+`P` to open the control palette
+- type `insert snippets` to open the list of available snippets
+- with the mouse, click on the eye icon to hide the snippet
+
 [teno]: https://tentacolo.com
