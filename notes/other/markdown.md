@@ -68,7 +68,8 @@ There are many extension to improve the writing of markdown files
 Further setting that I use just for markdown projects.  
 Go to `file`->`preferences`->`settings` and type `@lang:markdown`. Then select:
 - editor.wordBasedSuggestions: off. 
-- editor.quickSuggestions: other: on. 
+- editor.quickSuggestions: other: on.
+
 This way I don't get **plain text** suggestion but I do get **code snippet** suggestion while typing. Nice!
 
 [teno]: https://tentacolo.com
