@@ -89,4 +89,20 @@ At last, I don't like many of the default intellisense snippets. To avoid them t
 - type `insert snippets` to open the list of available snippets
 - with the mouse, click on the eye icon to hide the snippet
 
+#### Some useful snippets
+
+Navigate to `File`->`Preferences`->`Configure snippets` and select `markdown` from the control palette.
+This will open the `markdown.json` file. Edit it by adding your favorite snippets.
+
+Equation environment within dollar signs
+  ```
+  "latex equation": {
+		"prefix": "equation",
+		"body": [
+			"$$\n\\begin{equation}\n\t${1:x = y}\n\\end{equation}\n$$",
+		],
+		"description": "Latex equation environment"
+	},
+  ```
+
 [teno]: https://tentacolo.com
