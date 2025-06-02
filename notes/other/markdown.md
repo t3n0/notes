@@ -72,7 +72,9 @@ This means that when we are editing any jupyter markdown cell, we can set a side
 Finally, to convert `.md` files to `.pdf`, I follow a simple 2-step procedure:
 1. right click anywhere in the document and select convert to `html`;
 2. then open the browser and select export to `pdf` from the file dropdown menu.
-I tried different approaches such as `nbconverter`, `pandoc`, `markdown-pdf` extensions. There are always problems when rendering the math.
+
+Many people on the internet suggest to use tools such as `nbconverter`, `pandoc`, `markdown-pdf` extension, and the like.
+Honestly, I tried all of them and there are always problems when rendering the math.
 The 2-step approach descibed above is the one that produces good math formulas and does not require too much tinkering with libraries and stuff.
 
 Further setting that I use just for markdown projects.  
