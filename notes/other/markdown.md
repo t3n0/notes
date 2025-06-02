@@ -64,6 +64,16 @@ Finally, a short paragraph about the vscode extensions that I use for writing ma
 There are many extension to improve the writing of markdown files
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+
+The third one is especially useful because it also recognise the markdown environments of jupyter cells.
+This means that when we are editing any jupyter markdown cell, we can set a side panel with the preview and see the markdown cell being rendered live! Very useful!
+
+Finally, to convert `.md` files to `.pdf`, I follow a simple 2-step procedure:
+1. right click anywhere in the document and select convert to `html`;
+2. then open the browser and select export to `pdf` from the file dropdown menu.
+I tried different approaches such as `nbconverter`, `pandoc`, `markdown-pdf` extensions. There are always problems when rendering the math.
+The 2-step approach descibed above is the one that produces good math formulas and does not require too much tinkering with libraries and stuff.
 
 Further setting that I use just for markdown projects.  
 Go to `file`->`preferences`->`settings` and type `@lang:markdown`. Then select:
