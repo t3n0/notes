@@ -69,13 +69,17 @@ There are many extension to improve the writing of markdown files
 The third one is especially useful because it also recognise the markdown environments of jupyter cells.
 This means that when we are editing any jupyter markdown cell, we can set a side panel with the preview and see the markdown cell being rendered live! Very useful!
 
-Finally, to convert `.md` files to `.pdf`, I follow a simple 2-step procedure:
-1. right click anywhere in the document and select convert to `html`;
-2. then open the browser and select export to `pdf` from the file dropdown menu.
+To convert `.md` files to `.pdf`, I follow either of the following two methods:
+1. right click **in the document** and select convert to `html`; then open the browser and select export to `pdf` from the file dropdown menu, or
+2. right click **in the preview** and select `export`->`chrome-puppeteer`->`pdf`.
+
+The second method requires:
+- installation of `chrome` ([here](https://www.google.com/chrome/))
+- set the path to `chrome`: from `settings` set the option `markdown-preview-enhanced.chromePath` to `/usr/bin/google-chrome`
 
 Many people on the internet suggest to use tools such as `nbconverter`, `pandoc`, `markdown-pdf` extension, and the like.
 Honestly, I tried all of them and there are always problems when rendering the math.
-The 2-step approach descibed above is the one that produces good math formulas and does not require too much tinkering with libraries and stuff.
+The two approaches descibed above is the ones that produce good math formulas and do not require too much tinkering with libraries and stuff.
 
 Further setting that I use just for markdown projects.  
 Go to `file`->`preferences`->`settings` and type `@lang:markdown`. Then select:
