@@ -67,7 +67,8 @@ There are many extension to improve the writing of markdown files
 - [markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 The third one is especially useful because it also recognise the markdown environments of jupyter cells.
-This means that when we are editing any jupyter markdown cell, we can set a side panel with the preview and see the markdown cell being rendered live! Very useful!
+This means that when we are editing any jupyter markdown cell, we can set a side panel with the preview and see the markdown cell being rendered live!
+The full and super useful documentation of markdown preview enhanced is [here](https://shd101wyy.github.io/markdown-preview-enhanced/#/).
 
 To convert `.md` files to `.pdf`, I follow either of the following two methods:
 1. right click **in the document** and select convert to `html`; then open the browser and select export to `pdf` from the file dropdown menu, or
