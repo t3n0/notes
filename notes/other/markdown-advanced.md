@@ -413,7 +413,7 @@ The default Latex renderer is `Katex`, which is fast, but *does not include* man
 A work around is done using HTML `anchor` and `id` in the following way
 
 ```md
-<a id="eq:schrodinger"></a>
+<a id="schrodinger"></a>
 $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
@@ -423,16 +423,14 @@ $$
 
 which produces the following **labelled** equation
 
+<a id="schrodinger"></a>
 $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
 \end{equation}
-\label{pollo}
 $$
 
-<a id="schrodinger"></a>
-
-The above [Eq. 2](#schrodinger) has been labelled using the usual link syntax `[Eq. 2](#eq:schrodinger)`.
+The above [Eq. 2](#schrodinger) has been labelled using the usual link syntax `[Eq. 2](#schrodinger)`.
 
 ### 3.4. Math autocompletion
 
