@@ -245,6 +245,8 @@ Note: the justification of the text is given by the way we encapsulate colons an
 
 ## 2. Extended markdown syntax
 
+*Disclaimer*: this section provides commands and snippets of code that work solely when using the markdown renderer provided by the [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) and the [markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/) extensions. *This means that if you are reading this on __Github__, most of the following commands will not be rendered correctly.*
+
 ### 2.1. Section numbering and table of contents
 
 Both [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) and
