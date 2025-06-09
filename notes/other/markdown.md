@@ -49,25 +49,29 @@ And the url is defined later with `[teno]: https://tentacolo.com`
 
 For example, [my website][teno], [again my website][teno], [the same][teno].
 
-Images are created similarly to links via an `!` exlamation mark, e.g. `![pollo-picture](pollo.jpg)`.
+Images are created similarly to links via an `!` exlamation mark, e.g. `![pollo-picture](./pollo.png)`.
 The latter produces the following
-![pollo-picture](pollo.jpg)
 
-Finally, images can be used as link buttons. We combine the two syntax as `[![pollo](pollo.jpg)](https://tentacolo.com)`.
+![pollo-picture](./pollo.png)
+
+Finally, images can be used as link buttons. We combine the two syntax as `[![pollo](pollo.png)](https://tentacolo.com)`.
 The latter command produces the following link image:
 
-[![pollo](pollo.jpg)](https://tentacolo.com)
+[![pollo](pollo.png)](https://tentacolo.com)
 
-### Vscode extensions
+### VS Code extensions
 
-Finally, a short paragraph about the vscode extensions that I use for writing markdown.
-There are many extension to improve the writing of markdown files
+Finally, a short paragraph about the mandatory VS Code extensions that I use for writing markdown.
+These are:
+
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 The third one is especially useful because it also recognise the markdown environments of jupyter cells.
 This means that when we are editing any jupyter markdown cell, we can set a side panel with the preview and see the markdown cell being rendered live!
+A better introduction to these extensions and more proficient use of the markdown language see my [advanced markdown notes](./markdown-advanced.md).
+
 The full and super useful documentation of markdown preview enhanced is [here](https://shd101wyy.github.io/markdown-preview-enhanced/#/).
 
 To convert `.md` files to `.pdf`, I follow either of the following two methods:

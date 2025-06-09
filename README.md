@@ -47,7 +47,8 @@ The purpose is to collect in a single place all these useful information without
    - [managing libraries](notes/ubuntu/linux-libraries.md)
    - [SSH quick guide](notes/ubuntu/ssh.md)
 9. [Other](notes/other):
-   - [markdown notes](notes/other/markdown.md)
+   - [basic markdown](notes/other/markdown.md)
+   - [advanced markdown and VS Code](notes/other/markdown-advanced.md)
    - [permalink VS main link](notes/other/permalink.md)
    - [download links](notes/other/download-link.md)
    - [Shields and bagdes](https://shields.io/)
