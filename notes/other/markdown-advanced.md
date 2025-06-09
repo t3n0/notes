@@ -381,6 +381,8 @@ To type equaitons, we **must** embed them in dollar signs `$`:
 
 Note that both the above equations are *not numbered*.
 
+*__NOTE for Github__: the double dollar environment still produces an inline equation. On other markdown renderers this equation will be on a new line (for example, see the [pdf file](markdown-advanced.pdf)).*
+
 ### 3.2. Numbering equations
 
 To include a number tag, we must use latex environments. For example, with the following code
@@ -398,9 +400,10 @@ we obtain
 $$
 \begin{equation}
     A = \int_a^b f(x) dx.
-\tag{9}
 \end{equation}
 $$
+
+*__NOTE for Github__: equation numbering does not work on github. Maybe there is a workaround, but I don't know.*
 
 ### 3.3. Labelling equations
 
@@ -417,7 +420,7 @@ $$
 $$
 ```
 
-***NOTE for Github**: we must inlcude a blank line between the anchor command `<a ...>` and the dollar signs `$$`. Also, do not include special characters such as colons in the label.*
+*__NOTE for Github__: we must inlcude a blank line between the anchor command `<a ...>` and the dollar signs `$$`. Also, do not include special characters such as colons `:` in the label.*
 
 The above produces the following **labelled** equation
 
