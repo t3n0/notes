@@ -401,6 +401,12 @@ $$
 \end{equation}
 $$
 
+```math
+\begin{equation}
+A = \int_a^b f(x) dx.
+\end{equation}
+```
+
 ### 3.3. Labelling equations
 
 The default Latex renderer is `Katex`, which is fast, but *does not include* many features. For example, labelling equations is not possible with Katex.
