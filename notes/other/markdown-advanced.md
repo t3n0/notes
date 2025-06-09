@@ -427,10 +427,13 @@ $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
 \end{equation}
+\label{pollo}
 $$
+
 <a id="eq:schrodinger"></a>
 
 The above [Eq. 2](#eq:schrodinger) has been labelled using the usual link syntax `[Eq. 2](#eq:schrodinger)`.
+Eq [pollo](#pollo)
 
 ### 3.4. Math autocompletion
 
