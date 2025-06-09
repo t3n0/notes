@@ -430,10 +430,9 @@ $$
 \label{pollo}
 $$
 
-<a id="eq:schrodinger"></a>
+<a id="schrodinger"></a>
 
-The above [Eq. 2](#eq:schrodinger) has been labelled using the usual link syntax `[Eq. 2](#eq:schrodinger)`.
-Eq [pollo](#pollo)
+The above [Eq. 2](#schrodinger) has been labelled using the usual link syntax `[Eq. 2](#eq:schrodinger)`.
 
 ### 3.4. Math autocompletion
 
