@@ -424,6 +424,7 @@ $$
 which produces the following **labelled** equation
 
 <a id="eq:schrodinger"></a>
+
 $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
