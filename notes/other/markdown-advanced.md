@@ -423,13 +423,12 @@ $$
 
 which produces the following **labelled** equation
 
-<a id="eq:schrodinger"></a>
-
 $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
 \end{equation}
 $$
+<a id="eq:schrodinger"></a>
 
 The above [Eq. 2](#eq:schrodinger) has been labelled using the usual link syntax `[Eq. 2](#eq:schrodinger)`.
 
