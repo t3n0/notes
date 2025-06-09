@@ -398,14 +398,9 @@ we obtain
 $$
 \begin{equation}
     A = \int_a^b f(x) dx.
+\tag{9}
 \end{equation}
 $$
-
-```math
-\begin{equation}
-A = \int_a^b f(x) dx.
-\end{equation}
-```
 
 ### 3.3. Labelling equations
 
@@ -414,6 +409,7 @@ A work around is done using HTML `anchor` and `id` in the following way
 
 ```md
 <a id="schrodinger"></a>
+
 $$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
@@ -421,9 +417,13 @@ $$
 $$
 ```
 
-which produces the following **labelled** equation
+***NOTE for Github**: we must inlcude a blank line between the anchor command `<a ...>` and the dollar signs `$$`. Also, do not include special characters such as colons in the label.*
 
-<a id="schrodinger"></a> $$
+The above produces the following **labelled** equation
+
+<a id="schrodinger"></a>
+
+$$
 \begin{equation}
     -i \hbar\frac{\partial\Psi}{\partial t} = \hat H \Psi.
 \end{equation}
