@@ -9,3 +9,9 @@ Collections of notes that I built over the years with the most various purposes:
 - [**multiprocessing**](notes/multiprocessing.md) - Simple script to implement a multiprocessing python code.
 - [**MPI with python**](notes/mpi4py.md) - How to use `mpi4py` in a very simple example.
 - [**system-wide scripts**](notes/python-scripts.md) - Save and run a script all over your machine.
+
+---
+
+[← Back to Profile](https://github.com/t3n0)
+
+[← Back to Hub](https://github.com/t3n0/contents-hub)

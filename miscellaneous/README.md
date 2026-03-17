@@ -2,8 +2,8 @@
 
 Contents:
 
-- [**raw download**](notes/download-link.md)
-- [**parmalink**](notes/permalink.md)
+- [**Raw download**](notes/download-link.md)
+- [**Permalink**](notes/permalink.md)
 - [**Shields and bagdes**](https://shields.io/)
 - [**Version naming**](https://semver.org/)
 
