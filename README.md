@@ -9,13 +9,6 @@ The purpose is to collect in a single place all these useful information without
 ## Contents
 
 1. [Python notes](notes/python):
-   - [miniconda installation](notes/python/installation.md)
-   - [build, distribute and install](notes/python/python-packaging.md)
-   - [extension modules with cython](notes/python/cython.md)
-   - [multithreading](notes/python/multithreading.md)
-   - [multiprocessing](notes/python/multiprocessing.md)
-   - [MPI with python](notes/python/mpi4py.md)
-   - [system-wide scripts](notes/python/python-scripts.md)
 2. [Quantum-Espresso notes](notes/espresso):
    - [installation](notes/espresso/installation.md)
 3. [Wannier90](notes/wannier90):
