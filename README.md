@@ -17,3 +17,9 @@ The purpose is to collect in a single place all these useful information without
 7. [Other](https://github.com/t3n0/notes/tree/main/miscellaneous)
 
 More contents to come.
+
+---
+
+[← Back to Profile](https://github.com/t3n0)
+
+[← Back to Hub](https://github.com/t3n0/contents-hub)
