@@ -8,14 +8,14 @@ The purpose is to collect in a single place all these useful information without
 
 ## Contents
 
-1. [Python notes](notes/python)
-2. [Quantum-Espresso notes](notes/espresso)
-3. [Wannier90](notes/wannier90)
-4. [Siesta](notes/siesta)
-5. [Git](notes/git)
+1. [Python notes](https://github.com/t3n0/notes/tree/main/python)
+2. [Quantum-Espresso notes](https://github.com/t3n0/notes/tree/main/espresso)
+3. [Wannier90](https://github.com/t3n0/notes/tree/main/wannier90)
+4. [Siesta](https://github.com/t3n0/notes/tree/main/siesta)
+5. [Git](https://github.com/t3n0/notes/tree/main/git)
    - [git notes](notes/git/git-notes.md)
    - [cloning a repo](notes/git/git-cloning.md)
-6. [Ubuntu notes](notes/ubuntu):
+6. [Ubuntu notes](https://github.com/t3n0/notes/tree/main/ubuntu):
    - [ubuntu clean install](notes/ubuntu/clean-install.md)
    - [create a descktop launcher for an app](notes/ubuntu/desktop-app-launcher.md)
    - [managing libraries](notes/ubuntu/linux-libraries.md)
@@ -29,15 +29,3 @@ The purpose is to collect in a single place all these useful information without
    - [Version naming](https://semver.org/)
 
 More contents to come.
-
-## Support
-
-For any problems, questions or suggestions, please contact me at tenobaldi@gmail.com.
-
-## License
-
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
