@@ -3,11 +3,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/t3n0/notes)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-[maxwell1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/maxwell1D
-[ising]: https://github.com/t3n0/notes/tree/main/notes/lectures/ising%20model
-[qw1D]: https://github.com/t3n0/notes/tree/main/notes/lectures/finite%20square%20well%201D
-[pyprofile]: https://github.com/t3n0/notes/tree/main/notes/lectures/profiling%20python
-
 Collection of notes, links, scripts, lectures and ideas spanning a number of different topics.  
 The purpose is to collect in a single place all these useful information without googling them from scratch.
 
