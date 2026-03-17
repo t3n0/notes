@@ -8,14 +8,11 @@ The purpose is to collect in a single place all these useful information without
 
 ## Contents
 
-1. [Python notes](notes/python):
-2. [Quantum-Espresso notes](notes/espresso):
-   - [installation](notes/espresso/installation.md)
-3. [Wannier90](notes/wannier90):
-   - [installation](notes/wannier90/installation.md)
-4. [Siesta](notes/siesta):
-   - [installation](notes/siesta/installation.md)
-5. [Git](notes/git):
+1. [Python notes](notes/python)
+2. [Quantum-Espresso notes](notes/espresso)
+3. [Wannier90](notes/wannier90)
+4. [Siesta](notes/siesta)
+5. [Git](notes/git)
    - [git notes](notes/git/git-notes.md)
    - [cloning a repo](notes/git/git-cloning.md)
 6. [Ubuntu notes](notes/ubuntu):
