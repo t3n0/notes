@@ -13,19 +13,7 @@ The purpose is to collect in a single place all these useful information without
 3. [Wannier90](https://github.com/t3n0/notes/tree/main/wannier90)
 4. [Siesta](https://github.com/t3n0/notes/tree/main/siesta)
 5. [Git](https://github.com/t3n0/notes/tree/main/git)
-   - [git notes](notes/git/git-notes.md)
-   - [cloning a repo](notes/git/git-cloning.md)
-6. [Ubuntu notes](https://github.com/t3n0/notes/tree/main/ubuntu):
-   - [ubuntu clean install](notes/ubuntu/clean-install.md)
-   - [create a descktop launcher for an app](notes/ubuntu/desktop-app-launcher.md)
-   - [managing libraries](notes/ubuntu/linux-libraries.md)
-   - [SSH quick guide](notes/ubuntu/ssh.md)
-7. [Other](notes/other):
-   - [basic markdown](notes/other/markdown.md)
-   - [advanced markdown and VS Code](notes/other/markdown-advanced.md)
-   - [permalink VS main link](notes/other/permalink.md)
-   - [download links](notes/other/download-link.md)
-   - [Shields and bagdes](https://shields.io/)
-   - [Version naming](https://semver.org/)
+6. [Ubuntu notes](https://github.com/t3n0/notes/tree/main/ubuntu)
+7. [Other](https://github.com/t3n0/notes/tree/main/miscellaneous)
 
 More contents to come.

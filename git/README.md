@@ -1,8 +1,9 @@
-# Siesta
+# Git notes
 
-Contents:
+Basic git usage:
 
-- [**installation**](notes/installation.md)
+- [**basic git**](notes/git-notes.md)
+- [**clone**](notes/git-cloning.md)
 
 ---
 
