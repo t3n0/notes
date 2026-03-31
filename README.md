@@ -14,7 +14,8 @@ The purpose is to collect in a single place all these useful information without
 4. [Siesta](https://github.com/t3n0/notes/tree/main/siesta)
 5. [Git](https://github.com/t3n0/notes/tree/main/git)
 6. [Ubuntu notes](https://github.com/t3n0/notes/tree/main/ubuntu)
-7. [Miscellaneous](https://github.com/t3n0/notes/tree/main/miscellaneous)
+7. [Math](https://github.com/t3n0/notes/tree/main/math)
+8. [Miscellaneous](https://github.com/t3n0/notes/tree/main/miscellaneous)
 
 More contents to come.
 
