@@ -7,6 +7,7 @@ $$
     f(t) = I e^{-\alpha t},
 \end{equation}
 $$
+
 where $I$ is a **distance** and $\alpha$ is an **inverse time**. This function describes the exponential decay of the position of an object as time passes by.
 The **numerical values** of $f$ depends on the values the we insert into $I$ and $\alpha$.
 
