@@ -25,8 +25,8 @@ Let's define some units, also known as **a scale**:
 
 $$
 \begin{align}
-    t &= t_c \, t^* \\
-    f(t) &= f_c \, f^*(t^*),
+    t &= t_c t^{*} \\
+    f(t) &= f_c f^{ *} (t^{ *}),
 \end{align}
 $$
 
@@ -36,32 +36,32 @@ The scaled function will be
 $$
 \begin{align}
     f(t) &= I e^{-\alpha t} \\
-    f_c \, f^*(t^*) &= I e^{-\alpha \, t_c \, t^*} \\
-    f^*(t^*) &= e^{-t^*}
+    f_c  f^{ *}(t^{ *}) &= I e^{-\alpha  t_c  t^{ *}} \\
+    f^{ *}(t^{ *}) &= e^{-t^{ *}}
 \end{align}
 $$
 
-where in the last line **we defined the scaling factors** as $t_c=1/\alpha$ and $f_c=I$. The domain and codomain of $f^*$ has changed as well:
+where in the last line **we defined the scaling factors** as $t_c=1/\alpha$ and $f_c=I$. The domain and codomain of $f^{*}$ has changed as well:
 
 $$
 \begin{align}
-    f^* : T^* &\rightarrow L^* \\
-    t^* &\mapsto e^{- t^*}.
+    f^{ *} : T^{ *} &\rightarrow L^{ *} \\
+    t^{ *} &\mapsto e^{- t^{ *}}.
 \end{align}
 $$
 
 The **new scaled** function has some important properties:
 - it is **dimensionless**.
-- it lives in the $T^*$ and $L^*$ domains, which capture the characteristic length of the system and thus are well suited for numerical evaluation.
-- in a software, $T^*$ and $L^*$ are generally represented with an array of values. If we want to change the units of $t^*$ and $f^*(t^*)$, we just need to strecth $T^*$ and $L^*$ with the desired factors.
+- it lives in the $T^{ *}$ and $L^{ *}$ domains, which capture the characteristic length of the system and thus are well suited for numerical evaluation.
+- in a software, $T^{ *}$ and $L^{ *}$ are generally represented with an array of values. If we want to change the units of $t^{ *}$ and $f^{ *}(t^{ *})$, we just need to strecth $T^{ *}$ and $L^{ *}$ with the desired factors.
 - it is **general**, it can be computed once and for all, different systems can be computed with different choices of $I$ and $\alpha$.
 
 To go back to the **dimensional function** and the original **dimensional domains**, we simply perform the substitution
 
 $$
 \begin{align}
-    f(t) &= f_c \, f^*(t^*) =  f_c \, f^*(\frac{t}{t_c}) \\
-    t &= t_c \, t^*
+    f(t) &= f_c f^{ *}(t^{ *}) =  f_c f^{ *}(\frac{t}{t_c}) \\
+    t &= t_c  t^{ *}
 \end{align}
 $$
 
@@ -85,8 +85,8 @@ Let's perform the same substitution as before
 
 $$
 \begin{align}
-    t &= t_c \, t^* \\
-    f(t) &= f_c \, f^*(t^*).
+    t &= t_c  t^{ *} \\
+    f(t) &= f_c  f^{ *}(t^{ *}).
 \end{align}
 $$
 
@@ -94,13 +94,13 @@ Step by step we have
 
 $$
 \begin{equation}
-    \frac{df(t)}{dt} = \frac{df(t)}{dt^*} \frac{dt^*}{dt} = \frac{d}{dt^*}(f_c \, f^*(t^*)) \frac{dt^*}{dt} = \frac{f_c}{t_c} \frac{df^*(t^*)}{dt^*}
+    \frac{df(t)}{dt} = \frac{df(t)}{dt^{ *}} \frac{dt^{ *}}{dt} = \frac{d}{dt^{ *}}(f_c  f^{ *}(t^{ *})) \frac{dt^{ *}}{dt} = \frac{f_c}{t_c} \frac{df^{ *}(t^{ *})}{dt^{ *}}
 \end{equation}
 $$
 
 $$
 \begin{equation}
-    I = f(t=0) = f_c f^*(t^*(t=0)) = f_c \, f^*(t^* = 0)
+    I = f(t=0) = f_c f^{ *}(t^{ *}(t=0)) = f_c  f^{ *}(t^{ *} = 0)
 \end{equation}
 $$
 
@@ -109,7 +109,7 @@ We combine the above two and obtain
 $$
 \begin{equation}
 \boxed{
-    \frac{df^*(t^*)}{dt^*} = -\alpha \, t_c \, f^*(t^*), \quad f^*(0) = \frac{I}{f_c}}
+    \frac{df^{ *}(t^{ *})}{dt^{ *}} = -\alpha  t_c  f^{ *}(t^{ *}), \quad f^{ *}(0) = \frac{I}{f_c}}
 \end{equation}
 $$
 
@@ -118,16 +118,16 @@ And again **we choose** $t_c=1/\alpha$ and $f_c=I$. This produce the **general**
 $$
 \begin{equation}
 \boxed{
-    \frac{df^*(t^*)}{dt^*} = - f^*(t^*), \quad f^*(0) = 1}.
+    \frac{df^{ *}(t^{ *})}{dt^{ *}} = - f^{ *}(t^{ *}), \quad f^{ *}(0) = 1}.
 \end{equation}
 $$
 
-The new equation is written in a **dimensionless form** that captures the general properties of the system. The solution is the expression of $f^*(t^*) = e^{-t^*}$ of the previous section. The crucial thing to keep in mind is that we can **compute the dimensionless solution** with whatever numerical method we like. Once that solution is calculated, we can plug in the scaling factors as we did previously and get back the **dimensional function** and the original **dimensional domains**
+The new equation is written in a **dimensionless form** that captures the general properties of the system. The solution is the expression of $f^{ *}(t^{ *}) = e^{-t^{ *}}$ of the previous section. The crucial thing to keep in mind is that we can **compute the dimensionless solution** with whatever numerical method we like. Once that solution is calculated, we can plug in the scaling factors as we did previously and get back the **dimensional function** and the original **dimensional domains**
 
 $$
 \begin{align}
-    f(t) &= f_c \, f^*(t^*) =  f_c \, f^*(\frac{t}{t_c}) \\
-    t &= t_c \, t^*
+    f(t) &= f_c \, f^{ *}(t^{ *}) =  f_c  f^{ *}(\frac{t}{t_c}) \\
+    t &= t_c \, t^{ *}
 \end{align}
 $$
 
